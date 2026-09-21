@@ -1,0 +1,727 @@
+{
+  "0": {
+    "name": "Bitter Murmur",
+    "killer": "General",
+    "image": "./Perks/iconPerks_BitterMurmur.png"
+  },
+  "1": {
+    "name": "Deerstalker",
+    "killer": "General",
+    "image": "./Perks/iconPerks_Deerstalker.png"
+  },
+  "2": {
+    "name": "Distressing",
+    "killer": "General",
+    "image": "./Perks/iconPerks_Distressing.png"
+  },
+  "3": {
+    "name": "Hex: No One Escapes Death",
+    "killer": "General",
+    "image": "./Perks/iconPerks_NoOneEscapesDeath.png"
+  },
+  "4": {
+    "name": "Hex: Thrill Of The Hunt",
+    "killer": "General",
+    "image": "./Perks/DLC3/iconPerks_ThrillOfTheHunt.png"
+  },
+  "5": {
+    "name": "Insidious",
+    "killer": "General",
+    "image": "./Perks/iconPerks_Insidious.png"
+  },
+  "6": {
+    "name": "Iron Grasp",
+    "killer": "General",
+    "image": "./Perks/iconPerks_IronGrasp.png"
+  },
+  "7": {
+    "name": "Scourge Hook: Monstrous Shrine",
+    "killer": "General",
+    "image": "./Perks/iconPerks_MonstrousShrine.png"
+  },
+  "8": {
+    "name": "Shattered Hope",
+    "killer": "General",
+    "image": "./Perks/Meteor/iconPerks_BoonDestroyer.png"
+  },
+  "9": {
+    "name": "Sloppy Butcher",
+    "killer": "General",
+    "image": "./Perks/iconPerks_SloppyButcher.png"
+  },
+  "10": {
+    "name": "Spies From The Shadows",
+    "killer": "General",
+    "image": "./Perks/iconPerks_SpiesFromTheShadows.png"
+  },
+  "11": {
+    "name": "Unrelenting",
+    "killer": "General",
+    "image": "./Perks/iconPerks_Unrelenting.png"
+  },
+  "12": {
+    "name": "Whispers",
+    "killer": "General",
+    "image": "./Perks/iconPerks_Whispers.png"
+  },
+  "13": {
+    "name": "Agitation",
+    "killer": "The Trapper",
+    "image": "./Perks/iconPerks_Agitation.png"
+  },
+  "14": {
+    "name": "Brutal Strength",
+    "killer": "The Trapper",
+    "image": "./Perks/iconPerks_BrutalStrength.png"
+  },
+  "15": {
+    "name": "Unnerving Presence",
+    "killer": "The Trapper",
+    "image": "./Perks/iconPerks_UnnervingPresence.png"
+  },
+  "16": {
+    "name": "Bloodhound",
+    "killer": "The Wraith",
+    "image": "./Perks/iconPerks_Bloodhound.png"
+  },
+  "17": {
+    "name": "Predator",
+    "killer": "The Wraith",
+    "image": "./Perks/iconPerks_Predator.png"
+  },
+  "18": {
+    "name": "Shadowborn",
+    "killer": "The Wraith",
+    "image": "./Perks/iconPerks_Shadowborn.png"
+  },
+  "19": {
+    "name": "Enduring",
+    "killer": "The Hillbilly",
+    "image": "./Perks/iconPerks_Enduring.png"
+  },
+  "20": {
+    "name": "Lightborn",
+    "killer": "The Hillbilly",
+    "image": "./Perks/iconPerks_Lightborn.png"
+  },
+  "21": {
+    "name": "Tinkerer",
+    "killer": "The Hillbilly",
+    "image": "./Perks/iconPerks_Tinkerer.png"
+  },
+  "22": {
+    "name": "A Nurse's Calling",
+    "killer": "The Nurse",
+    "image": "./Perks/iconPerks_ANursesCalling.png"
+  },
+  "23": {
+    "name": "Stridor",
+    "killer": "The Nurse",
+    "image": "./Perks/iconPerks_Stridor.png"
+  },
+  "24": {
+    "name": "Thanatophobia",
+    "killer": "The Nurse",
+    "image": "./Perks/iconPerks_Thatanophobia.png"
+  },
+  "25": {
+    "name": "Dying Light",
+    "killer": "The Shape",
+    "image": "./Perks/DLC2/iconPerks_DyingLight.png"
+  },
+  "26": {
+    "name": "Play With Your Food",
+    "killer": "The Shape",
+    "image": "./Perks/DLC2/iconPerks_PlayWithYourFood.png"
+  },
+  "27": {
+    "name": "Save The Best For Last",
+    "killer": "The Shape",
+    "image": "./Perks/DLC2/iconPerks_SaveTheBestForLast.png"
+  },
+  "28": {
+    "name": "Hex: Devour Hope",
+    "killer": "The Hag",
+    "image": "./Perks/DLC3/iconPerks_DevourHope.png"
+  },
+  "29": {
+    "name": "Hex: Ruin",
+    "killer": "The Hag",
+    "image": "./Perks/DLC3/iconPerks_Ruin.png"
+  },
+  "30": {
+    "name": "Hex: The Third Seal",
+    "killer": "The Hag",
+    "image": "./Perks/DLC3/iconPerks_TheThirdSeal.png"
+  },
+  "31": {
+    "name": "Monitor & Abuse",
+    "killer": "The Doctor",
+    "image": "./Perks/DLC4/iconPerks_MonitorAndAbuse.png"
+  },
+  "32": {
+    "name": "Overcharge",
+    "killer": "The Doctor",
+    "image": "./Perks/DLC4/iconPerks_GeneratorOvercharge.png"
+  },
+  "33": {
+    "name": "Overwhelming Presence",
+    "killer": "The Doctor",
+    "image": "./Perks/DLC4/iconPerks_OverwhelmingPresence.png"
+  },
+  "34": {
+    "name": "Beast Of Prey",
+    "killer": "The Huntress",
+    "image": "./Perks/DLC5/iconPerks_BeastOfPrey.png"
+  },
+  "35": {
+    "name": "Hex Huntress Lullaby",
+    "killer": "The Huntress",
+    "image": "./Perks/DLC5/iconPerks_HuntressLullaby.png"
+  },
+  "36": {
+    "name": "Territorial Imperative",
+    "killer": "The Huntress",
+    "image": "./Perks/DLC5/iconPerks_TerritorialImperative.png"
+  },
+  "37": {
+    "name": "Barbecue & Chili",
+    "killer": "The Cannibal",
+    "image": "./Perks/Cannibal/iconPerks_BBQAndChili.png"
+  },
+  "38": {
+    "name": "Franklin's Demise",
+    "killer": "The Cannibal",
+    "image": "./Perks/Cannibal/iconPerks_FranklinsLoss.png"
+  },
+  "39": {
+    "name": "Knock Out",
+    "killer": "The Cannibal",
+    "image": "./Perks/Cannibal/iconPerks_KnockOut.png"
+  },
+  "40": {
+    "name": "Blood Warden",
+    "killer": "The Nightmare",
+    "image": "./Perks/England/iconPerks_BloodWarden.png"
+  },
+  "41": {
+    "name": "Fire Up",
+    "killer": "The Nightmare",
+    "image": "./Perks/England/iconPerks_FireUp.png"
+  },
+  "42": {
+    "name": "Remember Me",
+    "killer": "The Nightmare",
+    "image": "./Perks/England/iconPerks_RememberMe.png"
+  },
+  "43": {
+    "name": "Make Your Choice",
+    "killer": "The Pig",
+    "image": "./Perks/Finland/iconPerks_HangmansTrick.png"
+  },
+  "44": {
+    "name": "Scourge Hook: Hangman's Trick",
+    "killer": "The Pig",
+    "image": "./Perks/Finland/iconPerks_MakeYourChoice.png"
+  },
+  "45": {
+    "name": "Surveillance",
+    "killer": "The Pig",
+    "image": "./Perks/Finland/iconPerks_Surveillance.png"
+  },
+  "46": {
+    "name": "Bamboozle",
+    "killer": "The Clown",
+    "image": "./Perks/Guam/iconPerks_Bamboozle.png"
+  },
+  "47": {
+    "name": "Coulrophobia",
+    "killer": "The Clown",
+    "image": "./Perks/Guam/iconPerks_Coulrophobia.png"
+  },
+  "48": {
+    "name": "Pop Goes The Weasel",
+    "killer": "The Clown",
+    "image": "./Perks/Guam/iconPerks_PopGoesTheWeasel.png"
+  },
+  "49": {
+    "name": "Hex: Haunted Ground",
+    "killer": "The Spirit",
+    "image": "./Perks/Haiti/iconPerks_HauntedGround.png"
+  },
+  "50": {
+    "name": "Rancor",
+    "killer": "The Spirit",
+    "image": "./Perks/Haiti/iconPerks_Hatred.png"
+  },
+  "51": {
+    "name": "Spirit Fury",
+    "killer": "The Spirit",
+    "image": "./Perks/Haiti/iconPerks_SpiritFury.png"
+  },
+  "52": {
+    "name": "Discordance",
+    "killer": "The Legion",
+    "image": "./Perks/Kenya/iconPerks_Discordance.png"
+  },
+  "53": {
+    "name": "Iron Maiden",
+    "killer": "The Legion",
+    "image": "./Perks/Kenya/iconPerks_IronMaiden.png"
+  },
+  "54": {
+    "name": "Mad Grit",
+    "killer": "The Legion",
+    "image": "./Perks/Kenya/iconPerks_MadGrit.png"
+  },
+  "55": {
+    "name": "Corrupt Intervention",
+    "killer": "The Plague",
+    "image": "./Perks/Mali/iconPerks_CorruptIntervention.png"
+  },
+  "56": {
+    "name": "Dark Devotion",
+    "killer": "The Plague",
+    "image": "./Perks/Mali/iconPerks_DarkDevotion.png"
+  },
+  "57": {
+    "name": "Infectious Fright",
+    "killer": "The Plague",
+    "image": "./Perks/Mali/iconPerks_InfectiousFright.png"
+  },
+  "58": {
+    "name": "Furtive Chase",
+    "killer": "The Ghost Face",
+    "image": "./Perks/Oman/iconPerks_FurtiveChase.png"
+  },
+  "59": {
+    "name": "I'm All Ears",
+    "killer": "The Ghost Face",
+    "image": "./Perks/Oman/iconPerks_ImAllEars.png"
+  },
+  "60": {
+    "name": "Thrilling Tremors",
+    "killer": "The Ghost Face",
+    "image": "./Perks/Oman/iconPerks_ThrillingTremors.png"
+  },
+  "61": {
+    "name": "Cruel Limits",
+    "killer": "The Demogorgon",
+    "image": "./Perks/Qatar/iconPerks_CruelConfinement.png"
+  },
+  "62": {
+    "name": "Mindbreaker",
+    "killer": "The Demogorgon",
+    "image": "./Perks/Qatar/iconPerks_MindBreaker.png"
+  },
+  "63": {
+    "name": "Surge",
+    "killer": "The Demogorgon",
+    "image": "./Perks/Qatar/iconPerks_Surge.png"
+  },
+  "64": {
+    "name": "Blood Echo",
+    "killer": "The Oni",
+    "image": "./Perks/Sweden/iconPerks_BloodEcho.png"
+  },
+  "65": {
+    "name": "Nemesis",
+    "killer": "The Oni",
+    "image": "./Perks/Sweden/iconPerks_Nemesis.png"
+  },
+  "66": {
+    "name": "Zanshin Tactics",
+    "killer": "The Oni",
+    "image": "./Perks/Sweden/iconPerks_ZanshinTactics.png"
+  },
+  "67": {
+    "name": "Dead Man's Switch",
+    "killer": "The Deathslinger",
+    "image": "./Perks/Ukraine/iconPerks_DeadManSwitch.png"
+  },
+  "68": {
+    "name": "Gearhead",
+    "killer": "The DeathSlinger",
+    "image": "./Perks/Ukraine/iconPerks_GearHead.png"
+  },
+  "69": {
+    "name": "Hex: Retribution",
+    "killer": "The Deathslinger",
+    "image": "./Perks/Ukraine/iconPerks_HexRetribution.png"
+  },
+  "70": {
+    "name": "Deathbound",
+    "killer": "The Executioner",
+    "image": "./Perks/Wales/iconPerks_Deathbound.png"
+  },
+  "71": {
+    "name": "Forced Penance",
+    "killer": "The Executioner",
+    "image": "./Perks/Wales/iconPerks_ForcedPenance.png"
+  },
+  "72": {
+    "name": "Trail Of Torment",
+    "killer": "The Executioner",
+    "image": "./Perks/Wales/iconPerks_TrailOfTorment.png"
+  },
+  "73": {
+    "name": "Dragon's Grip",
+    "killer": "The Blight",
+    "image": "./Perks/Yemen/iconPerks_DragonsGrip.png"
+  },
+  "74": {
+    "name": "Hex: Blood Favor",
+    "killer": "The Blight",
+    "image": "./Perks/Yemen/iconPerks_HexBloodFavor.png"
+  },
+  "75": {
+    "name": "Hex: Undying",
+    "killer": "The Blight",
+    "image": "./Perks/Yemen/iconPerks_HexUndying.png"
+  },
+  "76": {
+    "name": "Coup de Grâce",
+    "killer": "The Twins",
+    "image": "./Perks/Aurora/iconPerks_CoupDeGrace.png"
+  },
+  "77": {
+    "name": "Hoarder",
+    "killer": "The Twins",
+    "image": "./Perks/Aurora/iconPerks_Hoarder.png"
+  },
+  "78": {
+    "name": "Oppresion",
+    "killer": "The Twins",
+    "image": "./Perks/Aurora/iconPerks_Oppression.png"
+  },
+  "79": {
+    "name": "Hex: Crowd Control",
+    "killer": "The Trickster",
+    "image": "./Perks/Comet/iconPerks_HexCrowdControl.png"
+  },
+  "80": {
+    "name": "No Way Out",
+    "killer": "The Trickster",
+    "image": "./Perks/Comet/iconPerks_NoWayOut.png"
+  },
+  "81": {
+    "name": "Starstruck",
+    "killer": "The Trickster",
+    "image": "./Perks/Comet/iconPerks_Starstruck.png"
+  },
+  "82": {
+    "name": "Eruption",
+    "killer": "The Nemesis",
+    "image": "./Perks/Eclipse/iconPerks_Eruption.png"
+  },
+  "83": {
+    "name": "Hysteria",
+    "killer": "The Nemesis",
+    "image": "./Perks/Eclipse/iconPerks_Hysteria.png"
+  },
+  "84": {
+    "name": "Lethal Pursuer",
+    "killer": "The Nemesis",
+    "image": "./Perks/Eclipse/iconPerks_LethalPursuer.png"
+  },
+  "85": {
+    "name": "Deadlock",
+    "killer": "The Cenobite",
+    "image": "./Perks/Gemini/iconPerks_Deadlock.png"
+  },
+  "86": {
+    "name": "Hex: Plaything",
+    "killer": "The Cenobite",
+    "image": "./Perks/Gemini/iconPerks_HexPlaything.png"
+  },
+  "87": {
+    "name": "Scourge Hook: Gift Of Pain",
+    "killer": "The Cenobite",
+    "image": "./Perks/Gemini/iconPerks_ScourgeHookGiftOfPain.png"
+  },
+  "88": {
+    "name": "Grim Embrace",
+    "killer": "The Artist",
+    "image": "./Perks/Ion/T_iconPerks_GrimEmbrace.png"
+  },
+  "89": {
+    "name": "Hex: Pentimento",
+    "killer": "The Artist",
+    "image": "./Perks/Ion/T_iconPerks_HexPentimento.png"
+  },
+  "90": {
+    "name": "Scourge Hook: Pain Resonance",
+    "killer": "The Artist",
+    "image": "./Perks/Ion/T_iconPerks_PainResonance.png"
+  },
+  "91": {
+    "name": "Call Of Brine",
+    "killer": "The Onryō",
+    "image": "./Perks/Kepler/iconPerks_CallOfBrine.png"
+  },
+  "92": {
+    "name": "Merciless Storm",
+    "killer": "The Onryō",
+    "image": "./Perks/Kepler/iconPerks_MercilessStorm.png"
+  },
+  "93": {
+    "name": "Scourge Hook: Floods Of Rage",
+    "killer": "The Onryō",
+    "image": "./Perks/Kepler/iconPerks_FloodOfRage.png"
+  },
+  "94": {
+    "name": "Darkness Revealed",
+    "killer": "The Dredge",
+    "image": "./Perks/Meteor/iconPerks_DarknessRevelated.png"
+  },
+  "95": {
+    "name": "Dissolution",
+    "killer": "The Dredge",
+    "image": "./Perks/Meteor/iconPerks_Dissolution.png"
+  },
+  "96": {
+    "name": "Septic Touch",
+    "killer": "The Dredge",
+    "image": "./Perks/Meteor/iconPerks_SepticTouch.png"
+  },
+  "97": {
+    "name": "Awakened Awareness",
+    "killer": "The Mastermind",
+    "image": "./Perks/Orion/iconPerks_AwakenedAwarenesss.png"
+  },
+  "98": {
+    "name": "Superior Anatomy",
+    "killer": "The Mastermind",
+    "image": "./Perks/Orion/iconPerks_SuperiorAnatomy.png"
+  },
+  "99": {
+    "name": "Terminus",
+    "killer": "The Mastermind",
+    "image": "./Perks/Orion/iconPerks_Terminus.png"
+  },
+  "100": {
+    "name": "Hex: Face The Darkness",
+    "killer": "The Knight",
+    "image": "./Perks/Quantum/iconPerks_HexFaceTheDarkness.png"
+  },
+  "101": {
+    "name": "Hubris",
+    "killer": "The Knight",
+    "image": "./Perks/Quantum/iconPerks_Hubris.png"
+  },
+  "102": {
+    "name": "Nowhere To Hide",
+    "killer": "The Knight",
+    "image": "./Perks/Quantum/iconPerks_NowhereToHide.png"
+  },
+  "103": {
+    "name": "Game Afoot",
+    "killer": "The Skull Merchant",
+    "image": "./Perks/Saturn/iconPerks_GameAfoot.png"
+  },
+  "104": {
+    "name": "Leverage",
+    "killer": "The Skull Merchant",
+    "image": "./Perks/Saturn/iconPerks_Leverage.png"
+  },
+  "105": {
+    "name": "THWACK!",
+    "killer": "The Skull Merchant",
+    "image": "./Perks/Saturn/iconPerks_Thwack.png"
+  },
+  "106": {
+    "name": "Forced Hesitation",
+    "killer": "The Singularity",
+    "image": "./Perks/Umbra/iconPerks_ForcedHesitation.png"
+  },
+  "107": {
+    "name": "Genetic Limits",
+    "killer": "The Singularity",
+    "image": "./Perks/Umbra/iconPerks_GeneticLimits.png"
+  },
+  "108": {
+    "name": "Machine Learning",
+    "killer": "The Singularity",
+    "image": "./Perks/Umbra/iconPerks_SelfAware.png"
+  },
+  "109": {
+    "name": "Alien Instinct",
+    "killer": "The Xenomorph",
+    "image": "./Perks/Wormhole/iconPerks_AlienInstinct.png"
+  },
+  "110": {
+    "name": "Rapid Brutality",
+    "killer": "The Xenomorph",
+    "image": "./Perks/Wormhole/iconPerks_RapidBrutality.png"
+  },
+  "111": {
+    "name": "Ultimate Weapon",
+    "killer": "The Xenomorph",
+    "image": "./Perks/Wormhole/iconPerks_UltimateWeapon.png"
+  },
+  "112": {
+    "name": "Batteries Included",
+    "killer": "The Good Guy",
+    "image": "./Perks/Yerkes/iconPerks_batteriesIncluded.png"
+  },
+  "113": {
+    "name": "Friends 'Til The End",
+    "killer": "The Good Guy",
+    "image": "./Perks/Yerkes/iconPerks_friendsTillTheEnd.png"
+  },
+  "114": {
+    "name": "Hex: Two Can Play",
+    "killer": "The Good Guy",
+    "image": "./Perks/Yerkes/iconPerks_twoCanPlay.png"
+  },
+  "115": {
+    "name": "Unbound",
+    "killer": "The Unknown",
+    "image": "./Perks/Applepie/iconPerks_Unbound.png"
+  },
+  "116": {
+    "name": "Undone",
+    "killer": "The Unknown",
+    "image": "./Perks/Applepie/iconPerks_Undone.png"
+  },
+  "117": {
+    "name": "Unforeseen",
+    "killer": "The Unknown",
+    "image": "./Perks/Applepie/iconPerks_Unforeseen.png"
+  },
+  "118": {
+    "name": "Dark Arrogance",
+    "killer": "The Lich",
+    "image": "./Perks/Churros/iconPerks_DarkArrogance.png"
+  },
+  "119": {
+    "name": "Languid Touch",
+    "killer": "The Lich",
+    "image": "./Perks/Churros/iconPerks_LanguidTouch.png"
+  },
+  "120": {
+    "name": "Weave Attunement",
+    "killer": "The Lich",
+    "image": "./Perks/Churros/iconPerks_WeaveAttunement.png"
+  },
+  "121": {
+    "name": "Dominance",
+    "killer": "The Dark Lord",
+    "image": "./Perks/Eclair/iconPerks_Dominance.png"
+  },
+  "122": {
+    "name": "Hex: Wretched Fate",
+    "killer": "The Dark Lord",
+    "image": "./Perks/Eclair/iconPerks_HexWretchedFate.png"
+  },
+  "123": {
+    "name": "Human Greed",
+    "killer": "The Dark Lord",
+    "image": "./Perks/Eclair/iconPerks_HumanGreed.png"
+  },
+  "124": {
+    "name": "All-Shaking Thunder",
+    "killer": "The Houndmaster",
+    "image": "./Perks/Gelato/T_UI_iconPerks_AllShakingThunder.png"
+  },
+  "125": {
+    "name": "No Quarter",
+    "killer": "The Houndmaster",
+    "image": "./Perks/Gelato/T_UI_iconPerks_NoQuarter.png"
+  },
+  "126": {
+    "name": "Scourge Hook: Jagged Compass",
+    "killer": "The Houndmaster",
+    "image": "./Perks/Gelato/T_UI_iconPerks_ScourgeHookJaggedCompass.png"
+  },
+  "127": {
+    "name": "Forever Entwined",
+    "killer": "The Ghoul",
+    "image": "./Perks/Icecream/T_UI_iconPerks_ForeverEntwined.png"
+  },
+  "128": {
+    "name": "Hex: Nothing But Misery",
+    "killer": "The Ghoul",
+    "image": "./Perks/Icecream/T_UI_iconPerks_NoneAreFree.png"
+  },
+  "129": {
+    "name": "None Are Free",
+    "killer": "The Ghoul",
+    "image": "./Perks/Icecream/T_UI_iconPerks_NothingButMisery.png"
+  },
+  "130": {
+    "name": "Haywire",
+    "killer": "The Animatronic",
+    "image": "./Perks/Ketchup/T_UI_iconPerks_Haywire.png"
+  },
+  "131": {
+    "name": "Help Wanted",
+    "killer": "The Animatronic",
+    "image": "./Perks/Ketchup/T_UI_iconPerks_HelpWanted.png"
+  },
+  "132": {
+    "name": "Phantom Fear",
+    "killer": "The Animatronic",
+    "image": "./Perks/Ketchup/T_UI_iconPerks_PhantomFear.png"
+  },
+  "133": {
+    "name": "Hex: Overture Of Doom",
+    "killer": "The Krasue",
+    "image": "./Perks/Maple/T_UI_iconPerks_HexOvertureOfDoom.png"
+  },
+  "134": {
+    "name": "Ravenous",
+    "killer": "The Krasue",
+    "image": "./Perks/Maple/T_UI_iconPerks_Ravenous.png"
+  },
+  "135": {
+    "name": "Wandering Eye",
+    "killer": "The Krasue",
+    "image": "./Perks/Maple/T_UI_iconPerks_WanderingEye.png"
+  },
+  "136": {
+    "name": "Hex: Hive Mind",
+    "killer": "The First",
+    "image": "./Perks/Poutine/T_UI_iconsPerks_HexHiveMind.png"
+  },
+  "137": {
+    "name": "Secret Project",
+    "killer": "The First",
+    "image": "./Perks/Poutine/T_UI_iconsPerks_SecretProject.png"
+  },
+  "138": {
+    "name": "Turn Back The Clock",
+    "killer": "The First",
+    "image": "./Perks/Poutine/T_UI_iconsPerks_TurnBackTheClock.png"
+  },
+  "139": {
+    "name": "Hex: Scared To Death",
+    "killer": "The Slasher",
+    "image": "./Perks/Sushi/T_UI_iconsPerks_ScaredToDeath.png"
+  },
+  "140": {
+    "name": "Rampage",
+    "killer": "The Slasher",
+    "image": "./Perks/Sushi/T_UI_iconsPerks_Rampage.png"
+  },
+  "141": {
+    "name": "Silent Shadow",
+    "killer": "The Slasher",
+    "image": "./Perks/Sushi/T_UI_iconsPerks_SilentShadow.png"
+  },
+  "142": {
+    "name": "Celestial Witness",
+    "killer": "The Judgment",
+    "image": "./Perks/Udon/T_UI_iconsPerks_CelestialWitness.png"
+  },
+  "143": {
+    "name": "Hex: Under Your Thumb",
+    "killer": "The Judgment",
+    "image": "./Perks/Udon/T_UI_iconsPerks_HexUnderYourThumb.png"
+  },
+  "144": {
+    "name": "Lay Waste",
+    "killer": "The Judgment",
+    "image": "./Perks/Udon/T_UI_iconsPerks_LayWaste.png"
+  }
+}
