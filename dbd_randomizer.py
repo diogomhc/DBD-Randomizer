@@ -22,8 +22,6 @@ perks_by_key = load_json(PERKS_FILE)       # {0: {"name": ..., "killer": ..., "i
 
 killers = [killers_by_key[k]["name"] for k in killers_by_key]
 killer_addons = {k: killers_by_key[k].get("addons", []) for k in killers_by_key}
-killers_mutable = killers.copy()
-killer_perks_mutable = [perks_by_key[k]["name"] for k in perks_by_key]
 killer_addons_mutable = [killers_by_key[k]["addons"] for k in killers_by_key]
 
 addon_bg_images = {
@@ -72,6 +70,30 @@ perk2_text_label = None
 perk3_text_label = None
 perk4_text_label = None
 perk_bg_photo = None
+
+STATE_FILE = "randomizer_state.json"
+
+def killer_perks_mutable_default():
+    return [perks_by_key[k]["name"] for k in perks_by_key]
+
+
+def load_state():
+    try:
+        with open(STATE_FILE, "r", encoding="utf-8") as f:
+            state = json.load(f)
+        return state.get("active_killers", killers.copy()), state.get("active_perks", killer_perks_mutable_default())
+    except (FileNotFoundError, json.JSONDecodeError):
+        return killers.copy(), [perks_by_key[k]["name"] for k in perks_by_key]
+
+killers_mutable, killer_perks_mutable = load_state()
+
+def save_state():
+    state = {
+        "active_killers": killers_mutable,
+        "active_perks": killer_perks_mutable
+    }
+    with open(STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump(state, f, indent=2, ensure_ascii=False)
 
 def randomize_all():
     randomize_killer()
@@ -141,18 +163,22 @@ def randomize_perks():
     perk_canvas_items = [perk1_on_canvas, perk2_on_canvas, perk3_on_canvas, perk4_on_canvas]
     perk_text_labels = [perk1_text_label, perk2_text_label, perk3_text_label, perk4_text_label]
 
-    if not killer_perks_mutable:
-        text_label.config(text="No active perks")
+    if len(killer_perks_mutable) < 4:
+        text_label.config(text="Not enough active perks")
         for canvas, item in zip(perk_canvases, perk_canvas_items):
             canvas.itemconfig(item, image="")
         for label in perk_text_labels:
             label.config(text="")
         return
 
-    for i in range(4):
-        perk_name = killer_perks_mutable[randint(0, len(killer_perks_mutable) - 1)]
-        perk_index = get_perk_index(perk_name)
+    indices = list(range(len(killer_perks_mutable)))
+    chosen_indices = []
+    for _ in range(4):
+        chosen_indices.append(indices.pop(randint(0, len(indices) - 1)))
 
+    for i in chosen_indices:
+        perk_name = killer_perks_mutable[i]
+        perk_index = get_perk_index(perk_name)
         current_perks_photos.append(get_perk_image(perk_index))
         current_perks.append(perk_name)
 
@@ -198,6 +224,7 @@ def toggle_and_refresh(key: int, border_frame):
     toggle_killer(key)
     is_active = killers[key] in killers_mutable
     border_frame.config(bg="#116611" if is_active else "#661111")
+    save_state()
 
 
 def toggle_perk(key: int):
@@ -213,6 +240,7 @@ def toggle_and_refresh_perk(key: int, border_frame):
     perk_name = perks_by_key[key]["name"]
     is_active = perk_name in killer_perks_mutable
     border_frame.config(bg="#116611" if is_active else "#661111")
+    save_state()
 
 
 def open_killer_menu():
@@ -307,6 +335,7 @@ def bulk_toggle(killer_menu_win, activate: bool):
     new_color = "#116611" if activate else "#661111"
     for border_frame in killer_menu_win.border_frames.values():
         border_frame.config(bg=new_color)
+    save_state()
 
 
 def bulk_toggle_perks(killer_perk_menu_win, activate: bool):
@@ -321,6 +350,7 @@ def bulk_toggle_perks(killer_perk_menu_win, activate: bool):
     new_color = "#116611" if activate else "#661111"
     for border_frame in killer_perk_menu_win.border_frames.values():
         border_frame.config(bg=new_color)
+    save_state()
 
 
 def prebuild_killer_perk_menu():
@@ -350,6 +380,7 @@ def deactivate_related_killer_perks(killer_perk_menu_win):
         if killer_name in deactivated_killers and perk_name in killer_perks_mutable:
             killer_perks_mutable.remove(perk_name)
             killer_perk_menu_win.border_frames[key].config(bg="#661111")
+    save_state()
 
 
 def activate_related_killer_perks(killer_perk_menu_win):
@@ -358,6 +389,7 @@ def activate_related_killer_perks(killer_perk_menu_win):
         if killer_name in killers_mutable and perk_name not in killer_perks_mutable:
             killer_perks_mutable.insert(key, perk_name)
             killer_perk_menu_win.border_frames[key].config(bg="#116611")
+    save_state()
 
 
 def build_killer_perk_grid(killer_perk_menu_win):
