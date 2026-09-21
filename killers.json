@@ -760,7 +760,25 @@
     "power": "./Powers/Orion/iconPowers_virulentBound.png",
     "addons": [
       {"name": "Iridescent Uroboros Vial", "rarity": "Visceral", "img": "./ItemAddons/Orion/iconAddon_iridescentUroborosVial.png"},
-      {"name": "Lab Photo", "rarity": "Visceral", "img": "./ItemAddons/Orion/iconAddon_labPhoto.png"}
+      {"name": "Lab Photo", "rarity": "Visceral", "img": "./ItemAddons/Orion/iconAddon_labPhoto.png"},
+      {"name": "Dark Sunglasses", "rarity": "Very Rare", "img": "./ItemAddons/Orion/iconAddon_darkSunglasses.png"},
+      {"name": "Green Herb", "rarity": "Very Rare", "img": "./ItemAddons/Orion/iconAddon_greenHerb.png"},
+      {"name": "Helicopter Stick", "rarity": "Very Rare", "img": "./ItemAddons/Orion/iconAddon_helicopterStick.png"},
+      {"name": "Uroboros Virus", "rarity": "Very Rare", "img": "./ItemAddons/Orion/iconAddon_lasPlagasVariant.png"},
+      {"name": "Egg (Gold)", "rarity": "Rare", "img": "./ItemAddons/Orion/iconAddon_goldenEgg.png"},
+      {"name": "Maiden Medallion", "rarity": "Rare", "img": "./ItemAddons/Orion/iconAddon_maidenMedalliom.png"},
+      {"name": "Portable Safe", "rarity": "Rare", "img": "./ItemAddons/Orion/iconAddon_portableSafe.png"},
+      {"name": "Red Herb", "rarity": "Rare", "img": "./ItemAddons/Orion/iconAddon_redHerb.png"},
+      {"name": "Video Conference Device", "rarity": "Rare", "img": "./ItemAddons/Orion/iconAddon_videoConferenceDevice.png"},
+      {"name": "Bullhorn", "rarity": "Uncommon", "img": "./ItemAddons/Orion/iconAddon_bullhorn.png"},
+      {"name": "Chalice (Gold)", "rarity": "Uncommon", "img": "./ItemAddons/Orion/iconAddon_goldChalice.png"},
+      {"name": "Leather Gloves", "rarity": "Uncommon", "img": "./ItemAddons/Orion/iconAddon_leatherGloves.png"},
+      {"name": "Lion Medallion", "rarity": "Uncommon", "img": "./ItemAddons/Orion/iconAddon_lionMedallion.png"},
+      {"name": "Loose Crank", "rarity": "Uncommon", "img": "./ItemAddons/Orion/iconAddon_looseCrank.png"},
+      {"name": "Jewel Beetle", "rarity": "Common", "img": "./ItemAddons/Orion/iconAddon_jewelBeetle.png"},
+      {"name": "R.P.D. Shoulder Walkie", "rarity": "Common", "img": "./ItemAddons/Orion/iconAddon_RPDShoulderWalkie.png"},
+      {"name": "Unicorn Medallion", "rarity": "Common", "img": "./ItemAddons/Orion/iconAddon_unicornMedallion.png"},
+      {"name": "Uroboros Tendril", "rarity": "Common", "img": "./ItemAddons/Orion/iconAddon_uroborosTendril.png"}
     ]
   },
   "29": {
@@ -769,7 +787,26 @@
     "power": "./Powers/Quantum/T_iconPowers_Executioner.png",
     "addons": [
       {"name": "Knight's Contract", "rarity": "Visceral", "img": "./ItemAddons/Quantum/iconAddon_KnightContract.png"},
-      {"name": "Iridescent Company Banner", "rarity": "Visceral", "img": "./ItemAddons/Quantum/iconAddon_IridescentCompanyBanner.png"}
+      {"name": "Iridescent Company Banner", "rarity": "Visceral", "img": "./ItemAddons/Quantum/iconAddon_IridescentCompanyBanner.png"},
+      {"name": "Blacksmith's Hammer", "rarity": "Very Rare", "img": "./ItemAddons/Quantum/iconAddon_BlacksmithHammer.png"},
+      {"name": "Flint And Steel", "rarity": "Very Rare", "img": "./ItemAddons/Quantum/iconAddon_FlintandSteel.png"},
+      {"name": "Healing Poultice", "rarity": "Very Rare", "img": "./ItemAddons/Quantum/iconAddon_HealingPoultice.png"},
+      {"name": "Jailer's Chimes", "rarity": "Very Rare", "img": "./ItemAddons/Donut/iconAddon_JailersChimes.png"},
+      {"name": "Broken Hilt", "rarity": "Rare", "img": "./ItemAddons/Quantum/iconAddon_BrokenHilt.png"},
+      {"name": "Grim Iron Mask", "rarity": "Rare", "img": "./ItemAddons/Quantum/iconAddon_GrimIronMask.png"},
+      {"name": "Ironworker's Tongs", "rarity": "Rare", "img": "./ItemAddons/Quantum/iconAddon_IronworkerTongs.png"},
+      {"name": "Sharpened Mount", "rarity": "Rare", "img": "./ItemAddons/Donut/iconAddon_SharpenedMount.png"},
+      {"name": "Town Watch's Torch", "rarity": "Rare", "img": "./ItemAddons/Quantum/iconAddon_TownWatctTorch.png"},
+      {"name": "Battleaxe Head", "rarity": "Uncommon", "img": "./ItemAddons/Quantum/iconAddon_BattleaxeHead.png"},
+      {"name": "Call To Arms", "rarity": "Uncommon", "img": "./ItemAddons/Quantum/iconAddon_CallToArms.png"},
+      {"name": "Cold Steel Manacles", "rarity": "Uncommon", "img": "./ItemAddons/Quantum/iconAddon_ColdSteelManacles.png"},
+      {"name": "Dried Horsemeat", "rarity": "Uncommon", "img": "./ItemAddons/Quantum/iconAddon_DriedHorsemeat.png"},
+      {"name": "Treated Blade", "rarity": "Uncommon", "img": "./ItemAddons/Quantum/iconAddon_TreatedBlade.png"},
+      {"name": "Gritty Lump", "rarity": "Common", "img": "./ItemAddons/Quantum/iconAddon_GrittyLump.png"},
+      {"name": "Map Of The Realm", "rarity": "Common", "img": "./ItemAddons/Quantum/iconAddon_MapoftheRealms.png"},
+      {"name": "Pillaged Mead", "rarity": "Common", "img": "./ItemAddons/Quantum/iconAddon_PillagedMead.png"},
+      {"name": "Tattered Tabard", "rarity": "Common", "img": "./ItemAddons/Quantum/iconAddon_TatteredTabard.png"}
+      
     ]
   },
   "30": {
@@ -778,7 +815,25 @@
     "power": "./Powers/Saturn/T_UI_iconPowers_drones.png",
     "addons": [
       {"name": "Expired Batteries", "rarity": "Visceral", "img": "./ItemAddons/Saturn/iconAddon_ExpiredBatteries.png"},
-      {"name": "Iridescent Unpublished Manuscript", "rarity": "Visceral", "img": "./ItemAddons/Saturn/iconAddon_IridescentUnpublishedManuscript.png"}
+      {"name": "Iridescent Unpublished Manuscript", "rarity": "Visceral", "img": "./ItemAddons/Saturn/iconAddon_IridescentUnpublishedManuscript.png"},
+      {"name": "Advanced Movement Prediction", "rarity": "Very Rare", "img": "./ItemAddons/Saturn/iconAddon_AdvancedMovementPrediction.png"},
+      {"name": "Geographical Readout", "rarity": "Very Rare", "img": "./ItemAddons/Saturn/iconAddon_GeographicalReadout.png"},
+      {"name": "Prototype Rotor", "rarity": "Very Rare", "img": "./ItemAddons/Saturn/iconAddon_PrototypeRotor.png"},
+      {"name": "Randomized Strobes", "rarity": "Very Rare", "img": "./ItemAddons/Saturn/iconAddon_RandomizedStrobes.png"},
+      {"name": "Brown Noise Generator", "rarity": "Rare", "img": "./ItemAddons/Saturn/iconAddon_BrownNoiseGenerator.png"},
+      {"name": "Infrared Upgrade", "rarity": "Rare", "img": "./ItemAddons/Saturn/iconAddon_InfaredUpgrade.png"},
+      {"name": "Loose Screw", "rarity": "Rare", "img": "./ItemAddons/Saturn/iconAddon_LooseScrew.png"},
+      {"name": "Powdered Glass", "rarity": "Rare", "img": "./ItemAddons/Saturn/iconAddon_PowderedGlass.png"},
+      {"name": "Vital Targeting Processor", "rarity": "Rare", "img": "./ItemAddons/Saturn/iconAddon_VitalTargetingProcessor.png"},
+      {"name": "Adaptive Lighting", "rarity": "Uncommon", "img": "./ItemAddons/Saturn/iconAddon_AdaptiveLighting.png"},
+      {"name": "Low-Power Mode", "rarity": "Uncommon", "img": "./ItemAddons/Saturn/iconAddon_LowPowerMode.png"},
+      {"name": "Shotgun Speakers", "rarity": "Uncommon", "img": "./ItemAddons/Saturn/iconAddon_ShotgunSpeakers.png"},
+      {"name": "Stereo Remote Mic", "rarity": "Uncommon", "img": "./ItemAddons/Saturn/iconAddon_StereoRemoteMic.png"},
+      {"name": "Supercharge", "rarity": "Uncommon", "img": "./ItemAddons/Saturn/iconAddon_Overcharge.png"},
+      {"name": "Adi Valente #1", "rarity": "Common", "img": "./ItemAddons/Saturn/iconAddon_AdiValente1.png"},
+      {"name": "High Current Upgrade", "rarity": "Common", "img": "./ItemAddons/Saturn/iconAddon_HighCurrentUpgrade.png"},
+      {"name": "High-Power FloodLlight", "rarity": "Common", "img": "./ItemAddons/Saturn/iconAddon_HighPowerFloodlight.png"},
+      {"name": "Ultrasonic Speaker", "rarity": "Common", "img": "./ItemAddons/Saturn/iconAddon_UltrasonicTrapSpeaker.png"}
     ]
   },
   "31": {
@@ -787,7 +842,25 @@
     "power": "./Powers/Umbra/iconPowers_quantumInstantiation.png",
     "addons": [
       {"name": "Denied Requisition Form", "rarity": "Visceral", "img": "./ItemAddons/Umbra/iconAddon_deniedRequisitionForm.png"},
-      {"name": "Iridescent Crystal Shard", "rarity": "Visceral", "img": "./ItemAddons/Umbra/iconAddon_iridiscentCrystalShard.png"}
+      {"name": "Iridescent Crystal Shard", "rarity": "Visceral", "img": "./ItemAddons/Umbra/iconAddon_iridiscentCrystalShard.png"},
+      {"name": "Crew Manifest", "rarity": "Very Rare", "img": "./ItemAddons/Umbra/iconAddon_crewManifest.png"},
+      {"name": "Diagnostic Tool (Construction)", "rarity": "Very Rare", "img": "./ItemAddons/Umbra/iconAddon_diagnosticToolConstruction.png"},
+      {"name": "Foreign Plant Fibers", "rarity": "Very Rare", "img": "./ItemAddons/Umbra/iconAddon_foreignPlantFibers.png"},
+      {"name": "Soma Family Photo", "rarity": "Very Rare", "img": "./ItemAddons/Umbra/iconAddon_somaFamilyPhoto.png"},
+      {"name": "Hologram Generator", "rarity": "Rare", "img": "./ItemAddons/Umbra/iconAddon_hologramGenerator.png"},
+      {"name": "Hyperawareness Spray", "rarity": "Rare", "img": "./ItemAddons/Umbra/iconAddon_hyperawarenessSpray.png"},
+      {"name": "Live Wires", "rarity": "Rare", "img": "./ItemAddons/Umbra/iconAddon_liveWires.png"},
+      {"name": "Nanomachine Gel", "rarity": "Rare", "img": "./ItemAddons/Umbra/iconAddon_nanomachineGel.png"},
+      {"name": "Spent Oxygen Tank", "rarity": "Rare", "img": "./ItemAddons/Umbra/iconAddon_spentOxygenTank.png"},
+      {"name": "Android Arm", "rarity": "Uncommon", "img": "./ItemAddons/Umbra/iconAddon_androidArm.png"},
+      {"name": "Cremated Remains", "rarity": "Uncommon", "img": "./ItemAddons/Umbra/iconAddon_crematedRemains.png"},
+      {"name": "Cryo Gel", "rarity": "Uncommon", "img": "./ItemAddons/Umbra/iconAddon_cryoGel.png"},
+      {"name": "Kid's Ball Glove", "rarity": "Uncommon", "img": "./ItemAddons/Umbra/iconAddon_kidsBallGlove.png"},
+      {"name": "Ultrasonic Sensor", "rarity": "Uncommon", "img": "./ItemAddons/Umbra/iconAddon_ultrasonicSensor.png"},
+      {"name": "Broken Security Key", "rarity": "Common", "img": "./ItemAddons/Umbra/iconAddon_brokenSecurityKey.png"},
+      {"name": "Diagnostic Tool (Repair)", "rarity": "Common", "img": "./ItemAddons/Umbra/iconAddon_diagnosticToolRepair.png"},
+      {"name": "Heavy Water", "rarity": "Common", "img": "./ItemAddons/Umbra/iconAddon_heavyWater.png"},
+      {"name": "Nutritional Slurry", "rarity": "Common", "img": "./ItemAddons/Umbra/iconAddon_nutritionalSlurry.png"}
     ]
   },
   "32": {
@@ -796,7 +869,25 @@
     "power": "./Powers/Wormhole/iconPowers_hiddenPursuit_active.png",
     "addons": [
       {"name": "Acidic Blood", "rarity": "Visceral", "img": "./ItemAddons/Wormhole/iconAddon_acidicBlood.png"},
-      {"name": "Improvised Cattle Prod", "rarity": "Visceral", "img": "./ItemAddons/Wormhole/iconAddon_improvisedCattleProd.png"}
+      {"name": "Improvised Cattle Prod", "rarity": "Visceral", "img": "./ItemAddons/Wormhole/iconAddon_improvisedCattleProd.png"},
+      {"name": "Cat Carrier", "rarity": "Very Rare", "img": "./ItemAddons/Wormhole/iconAddon_catCarrier.png"},
+      {"name": "Harpoon Gun", "rarity": "Very Rare", "img": "./ItemAddons/Wormhole/iconAddon_harpoonGun.png"},
+      {"name": "Self-Destruct Bolt", "rarity": "Very Rare", "img": "./ItemAddons/Wormhole/iconAddon_selfDestructBolt.png"},
+      {"name": "Semiotic Keyboard", "rarity": "Very Rare", "img": "./ItemAddons/Wormhole/iconAddon_semioticKeyboard.png"},
+      {"name": "Emergency Helmet", "rarity": "Rare", "img": "./ItemAddons/Wormhole/iconAddon_emergencyHelmet.png"},
+      {"name": "Kane's Helmet", "rarity": "Rare", "img": "./ItemAddons/Wormhole/iconAddon_kanesHelmet.png"},
+      {"name": "Molted Skin", "rarity": "Rare", "img": "./ItemAddons/Wormhole/iconAddon_moltedSkin.png"},
+      {"name": "Multipurpose Hatchet", "rarity": "Rare", "img": "./ItemAddons/Wormhole/iconAddon_multipurposeHatchet.png"},
+      {"name": "Parker's Headband", "rarity": "Rare", "img": "./ItemAddons/Wormhole/iconAddon_parkersHeadband.png"},
+      {"name": "Ash's Innards", "rarity": "Uncommon", "img": "./ItemAddons/Wormhole/iconAddon_ashsInnards.png"},
+      {"name": "Brett's Cap", "rarity": "Uncommon", "img": "./ItemAddons/Wormhole/iconAddon_brettsCap.png"},
+      {"name": "Crew Headset", "rarity": "Uncommon", "img": "./ItemAddons/Wormhole/iconAddon_crewHeadset.png"},
+      {"name": "Lambert's Star Map", "rarity": "Uncommon", "img": "./ItemAddons/Wormhole/iconAddon_lambertsStarMap.png"},
+      {"name": "Light Wand", "rarity": "Uncommon", "img": "./ItemAddons/Wormhole/iconAddon_lightWand.png"},
+      {"name": "Cereal Rations", "rarity": "Common", "img": "./ItemAddons/Wormhole/iconAddon_CerealRations.png"},
+      {"name": "Drinking Bird", "rarity": "Common", "img": "./ItemAddons/Wormhole/iconAddon_drinkingBird.png"},
+      {"name": "Ovomorph", "rarity": "Common", "img": "./ItemAddons/Wormhole/iconAddon_ovomorph.png"},
+      {"name": "Ripley's Watch", "rarity": "Common", "img": "./ItemAddons/Wormhole/iconAddon_ripleysWatch.png"}
     ]
   },
   "33": {
