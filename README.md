@@ -15,8 +15,9 @@ Built with Python, Tkinter, and Pillow.
 - **Manage Perks**: scrollable grid of every killer perk with the same enable/disable toggling, plus:
   - **Deactivate Perks of Deactivated Killers**
   - **Activate Perks of Active Killers**
+- **Manage Addons**: click a Killer's portrait to open a scrollable grid of that Killer's add-ons, and enable/disable them individually the same way as Killers and Perks. Includes **Enable All** and **Disable All** per Killer
 
-Rolls never repeat the same perk or add-on within a single result.
+Rolls never repeat the same perk or add-on within a single result, and only pull from what's currently enabled.
 
 ## Requirements
 
@@ -29,7 +30,7 @@ Rolls never repeat the same perk or add-on within a single result.
 ```bash
 git clone https://github.com/diogomhc/DBD-Randomizer.git
 cd DBD-Randomizer
-pip install pillow
+pip install -r requirements.txt
 ```
 
 ## Usage
@@ -37,7 +38,7 @@ pip install pillow
 Run the app from the project folder, since image paths are relative:
 
 ```bash
-python dbd_randomizer.py
+python main.py
 ```
 
 The app opens full screen.
@@ -49,31 +50,46 @@ The app opens full screen.
 | Randomize Perks | Rolls only the four perks |
 | Manage Killers | Opens the Killer enable/disable grid |
 | Manage Perks | Opens the perk enable/disable grid |
+| Manage Addons | Opens a Killer picker; selecting a Killer opens their add-on enable/disable grid |
 | Close | Exits the app |
 
-Press **Esc** in the main window to quit, or in either management screen to go back.
+Press **Esc** in the main window to quit, in a management screen to go back, or in a Killer's add-on grid to return to the Killer picker.
 
-> Enabled/disabled selections are saved to file automatically as you toggle them, so they persist when you restart the app.
+> Enabled/disabled selections — Killers, Perks, and now Add-ons — are saved to file automatically as you toggle them, so they persist when you restart the app.
 
-If fewer than 4 perks are active, Randomize Perks/Build shows a message instead of rolling. Same for a Killer with fewer than 2 add-ons defined.
+If fewer than 4 perks are active, Randomize Perks/Build shows a message instead of rolling. Same for a Killer with fewer than 2 active add-ons — whether that's because few are defined or because you've disabled most of them in Manage Addons.
 
 ## Project structure
 
-
 ```
 DBD-Randomizer/
-├── dbd_randomizer.py # Main application
-├── killers.json # Killer data (name, portrait, power, add-ons)
-├── perks.json # Perk data (name, owning killer, image)
-├── randomizer_state.json # Active Killers/Perks selections (auto-generated on first run)
-├── CharPortraits/ # Killer portraits
-├── Powers/ # Killer power icons
-├── ItemAddons/ # Add-on icons
-├── Perks/ # Perk icons
-└── Rarity_Backgrounds/ # Rarity backgrounds for add-ons and perks
+├── main.py               # Entry point - run this
+├── game_data.py           # Loads killers.json / perks.json (no UI, no randomization)
+├── randomizer.py          # RandomizerState - active/inactive tracking, randomization, save/load (no UI)
+├── images.py               # Pillow helpers for loading/resizing images
+├── ui.py                  # All Tkinter windows and widgets
+├── test_randomizer.py     # Unit tests for randomizer.py (pytest, no display needed)
+├── killers.json           # Killer data (name, portrait, power, add-ons)
+├── perks.json              # Perk data (name, owning killer, image)
+├── randomizer_state.json  # Active Killers/Perks/Add-ons selections (auto-generated on first run)
+├── requirements.txt
+├── CharPortraits/          # Killer portraits
+├── Powers/                 # Killer power icons
+├── ItemAddons/              # Add-on icons
+├── Perks/                   # Perk icons
+└── Rarity_Backgrounds/      # Rarity backgrounds for add-ons and perks
 ```
 
-`randomizer_state.json` is created automatically the first time you toggle a Killer or perk — you don't need to create it yourself, and it's a good candidate for `.gitignore` if you fork this project, since it's per-user state rather than project data.
+`randomizer_state.json` is created automatically the first time you toggle a Killer, Perk, or Add-on — you don't need to create it yourself, and it's already excluded via `.gitignore` since it's per-user state rather than project data.
+
+### Running the tests
+
+```bash
+pip install pytest
+pytest test_randomizer.py -v
+```
+
+The tests cover `randomizer.py` only (no Tkinter/Pillow involved), so they run in well under a second with no display required.
 
 ## Data format
 
@@ -94,7 +110,7 @@ Both JSON files use numeric string keys.
 }
 ```
 
-Valid `rarity` values: `Common`, `Uncommon`, `Rare`, `Very Rare`, `Visceral`. The `"addons"` field is optional — Killers without it simply won't roll add-ons yet.
+Valid `rarity` values: `Common`, `Uncommon`, `Rare`, `Very Rare`, `Visceral`. The `"addons"` field is optional — Killers without it simply won't roll add-ons yet, and their entry in Manage Addons will say so instead of showing an empty grid.
 
 **`perks.json`**
 
@@ -109,6 +125,20 @@ Valid `rarity` values: `Common`, `Uncommon`, `Rare`, `Very Rare`, `Visceral`. Th
 ```
 
 The `killer` field links a perk to its Killer, which powers the "related perks" buttons in the perk manager.
+
+### `randomizer_state.json`
+
+```json
+{
+  "active_killers": ["Killer Name", "..."],
+  "active_perks": ["Perk Name", "..."],
+  "active_addons": {
+    "0": ["Add-on Name", "..."]
+  }
+}
+```
+
+`active_addons` is keyed by killer index (as a string, since that's how JSON objects work) and lists that killer's currently-active add-on names. If a killer is missing from this map — for example because they were added to `killers.json` after this file was last saved — all of their add-ons default to active rather than none.
 
 ## Disclaimer
 

@@ -30,10 +30,16 @@ class RandomizerApp:
 
         self.killer_menu_win = None
         self.killer_perk_menu_win = None
+        self.addon_killer_select_win = None
+        # Built lazily, one per killer, the first time its add-ons are opened -
+        # with 44 killers and 20 add-ons each, prebuilding all of them up
+        # front like the killer/perk grids would load ~900 images on startup.
+        self.addon_grid_windows = {}
 
         self._build_main_window()
         self.root.after(100, self._prebuild_killer_menu)
         self.root.after(200, self._prebuild_perk_menu)
+        self.root.after(300, self._prebuild_addon_killer_menu)
 
     def run(self):
         self.root.mainloop()
@@ -116,6 +122,7 @@ class RandomizerApp:
         self._make_button(buttons_frame, "Randomize Perks", self.randomize_perks, 0, 2)
         self._make_button(buttons_frame, "Manage Perks", self.open_perk_menu, 1, 0)
         self._make_button(buttons_frame, "Manage Killers", self.open_killer_menu, 1, 1)
+        self._make_button(buttons_frame, "Manage Addons", self.open_addon_menu, 1, 2)
         self._make_button(buttons_frame, "Close", root.destroy, 2, 1)
 
     def _make_button(self, parent, text, command, row, col):
@@ -402,3 +409,209 @@ class RandomizerApp:
         for key, border_frame in win.border_frames.items():
             is_active = self.state.is_perk_active(key)
             border_frame.config(bg=COLOR_ACTIVE if is_active else COLOR_INACTIVE)
+
+    # ---------------------------------------------------------------
+    # Add-on management: pick a killer, then manage that killer's add-ons
+    # ---------------------------------------------------------------
+
+    def open_addon_menu(self):
+        self.addon_killer_select_win.deiconify()
+        self.addon_killer_select_win.focus_force()
+
+    def _prebuild_addon_killer_menu(self):
+        win = tk.Toplevel(self.root)
+        self.addon_killer_select_win = win
+        win.title("Manage Add-ons - Select a Killer")
+        win.configure(bg=COLOR_BG)
+        win.attributes("-fullscreen", True)
+        win.withdraw()
+        win.bind("<Escape>", lambda e: win.withdraw())
+        win.protocol("WM_DELETE_WINDOW", win.withdraw)
+        self._build_addon_killer_grid(win)
+
+    def _build_addon_killer_grid(self, win):
+        """Full-screen grid of killer portraits; clicking one opens that
+        killer's add-on grid instead of toggling the killer itself."""
+        win.update_idletasks()
+        total = len(self.data.killers_by_key)
+        pad, border = 5, 3
+
+        button_bar = tk.Frame(win, bg=COLOR_BG)
+        tk.Button(
+            button_bar, text="Back", command=win.withdraw, fg="white", bg=COLOR_BTN,
+            font=("Arial", 10),
+        ).pack(side="left", padx=10)
+        tk.Label(
+            button_bar, text="Select a Killer to manage their add-ons",
+            fg="white", bg=COLOR_BG, font=("Arial", 12),
+        ).pack(side="left", padx=10)
+
+        win.update_idletasks()
+        bar_height = button_bar.winfo_reqheight() + 25
+        win_w = win.winfo_screenwidth()
+        win_h = win.winfo_screenheight() - bar_height
+
+        best_size, best_cols = 0, 1
+        for cols in range(1, total + 1):
+            rows = -(-total // cols)
+            cell_w = win_w // cols - (2 * pad) - (2 * border)
+            cell_h = win_h // rows - (2 * pad) - (2 * border)
+            size = min(cell_w, cell_h)
+            if size > best_size:
+                best_size, best_cols = size, cols
+
+        thumb_size = (best_size, best_size)
+        columns = best_cols
+        button_bar.grid(row=0, column=0, columnspan=columns, pady=10)
+
+        win.thumb_images = []
+        for index, key in enumerate(sorted(self.data.killers_by_key)):
+            path = self.data.killers_by_key[key]["portrait"]
+            photo = load_image(path, thumb_size)
+            win.thumb_images.append(photo)
+
+            border_frame = tk.Frame(win, bg=COLOR_BTN)
+            row, col = (index // columns) + 1, index % columns
+            border_frame.grid(row=row, column=col, padx=pad, pady=pad)
+
+            tk.Button(
+                border_frame, image=photo,
+                command=lambda k=key: self.open_addon_grid_for_killer(k),
+                relief="flat", bg=COLOR_BTN, borderwidth=0,
+            ).pack(padx=border, pady=border)
+
+    def open_addon_grid_for_killer(self, killer_index: int):
+        win = self.addon_grid_windows.get(killer_index)
+        if win is None:
+            win = self._build_addon_grid_window(killer_index)
+            self.addon_grid_windows[killer_index] = win
+        win.deiconify()
+        win.focus_force()
+
+    def _build_addon_grid_window(self, killer_index: int):
+        """Scrollable grid of one killer's add-ons, enable/disable per add-on."""
+        win = tk.Toplevel(self.root)
+        killer_name = self.data.killer_name(killer_index)
+        win.title(f"Manage Add-ons - {killer_name}")
+        win.configure(bg=COLOR_BG)
+        win.attributes("-fullscreen", True)
+        win.bind("<Escape>", lambda e: win.withdraw())
+        win.protocol("WM_DELETE_WINDOW", win.withdraw)
+
+        addons = self.data.killer_addons.get(killer_index, [])
+        pad, border, thumb_px = 5, 3, 100
+
+        button_bar = tk.Frame(win, bg=COLOR_BG)
+        button_bar.pack(side="top", fill="x", pady=10)
+        tk.Button(
+            button_bar, text="Back", command=win.withdraw, fg="white", bg=COLOR_BTN,
+            font=("Arial", 10),
+        ).pack(side="left", padx=5)
+        tk.Label(
+            button_bar, text=f"{killer_name} Add-ons", fg="white", bg=COLOR_BG,
+            font=("Arial", 14),
+        ).pack(side="left", padx=15)
+        tk.Button(
+            button_bar, text="Disable All",
+            command=lambda: self._bulk_toggle_addons(win, killer_index, False),
+            fg="white", bg=COLOR_INACTIVE, font=("Arial", 10),
+        ).pack(side="right", padx=5)
+        tk.Button(
+            button_bar, text="Enable All",
+            command=lambda: self._bulk_toggle_addons(win, killer_index, True),
+            fg="white", bg=COLOR_ACTIVE, font=("Arial", 10),
+        ).pack(side="right", padx=5)
+
+        if not addons:
+            tk.Label(
+                win, text="This killer has no add-ons defined yet.",
+                fg="white", bg=COLOR_BG, font=("Arial", 14),
+            ).pack(pady=40)
+            return win
+
+        canvas = tk.Canvas(win, bg=COLOR_BG, highlightthickness=0)
+        scrollbar = tk.Scrollbar(win, orient="vertical", command=canvas.yview)
+        scroll_frame = tk.Frame(canvas, bg=COLOR_BG)
+        scroll_frame.bind(
+            "<Configure>", lambda e: canvas.configure(scrollregion=canvas.bbox("all"))
+        )
+        canvas.create_window((0, 0), window=scroll_frame, anchor="nw")
+        canvas.configure(yscrollcommand=scrollbar.set)
+        canvas.pack(side="left", fill="both", expand=True)
+        scrollbar.pack(side="right", fill="y")
+
+        def on_mousewheel(event):
+            canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
+
+        def bind_mousewheel(event):
+            canvas.bind_all("<MouseWheel>", on_mousewheel)
+            canvas.bind_all("<Button-4>", lambda e: canvas.yview_scroll(-1, "units"))
+            canvas.bind_all("<Button-5>", lambda e: canvas.yview_scroll(1, "units"))
+
+        def unbind_mousewheel(event):
+            canvas.unbind_all("<MouseWheel>")
+            canvas.unbind_all("<Button-4>")
+            canvas.unbind_all("<Button-5>")
+
+        canvas.bind("<Enter>", bind_mousewheel)
+        canvas.bind("<Leave>", unbind_mousewheel)
+
+        win_w = win.winfo_screenwidth()
+        columns = max(1, (win_w - scrollbar.winfo_reqwidth()) // (thumb_px + 2 * pad + 2 * border))
+        thumb_size = (thumb_px, thumb_px)
+
+        win.border_frames = {}
+        win.thumb_images = []
+        for index, addon in enumerate(addons):
+            bg_photo = load_rarity_background(addon["rarity"], thumb_size)
+            fg_photo = load_image(addon["img"], thumb_size)
+            win.thumb_images.append(bg_photo)
+            win.thumb_images.append(fg_photo)
+
+            is_active = self.state.is_addon_active(killer_index, index)
+            border_frame = tk.Frame(scroll_frame, bg=COLOR_ACTIVE if is_active else COLOR_INACTIVE)
+            row, col = index // columns, index % columns
+            border_frame.grid(row=row, column=col, padx=pad, pady=pad)
+            win.border_frames[index] = border_frame
+
+            cell_canvas = tk.Canvas(
+                border_frame, width=thumb_px, height=thumb_px, bg=COLOR_BTN, highlightthickness=0
+            )
+            cell_canvas.grid(row=0, column=0, padx=border, pady=(border, 0))
+            cell_canvas.create_image(0, 0, image=bg_photo, anchor="nw")
+            cell_canvas.create_image(0, 0, image=fg_photo, anchor="nw")
+            cell_canvas.bind(
+                "<Button-1>",
+                lambda e, i=index, f=border_frame: self._toggle_addon(killer_index, i, f),
+            )
+
+            name_label = tk.Label(
+                border_frame, text=addon["name"], fg="white",
+                bg=COLOR_ACTIVE if is_active else COLOR_INACTIVE,
+                font=("Arial", 8), wraplength=thumb_px, justify="center",
+            )
+            name_label.grid(row=1, column=0, padx=border, pady=(0, border))
+            name_label.bind(
+                "<Button-1>",
+                lambda e, i=index, f=border_frame: self._toggle_addon(killer_index, i, f),
+            )
+
+        return win
+
+    def _toggle_addon(self, killer_index: int, addon_index: int, border_frame: tk.Frame) -> None:
+        self.state.toggle_addon(killer_index, addon_index)
+        is_active = self.state.is_addon_active(killer_index, addon_index)
+        new_color = COLOR_ACTIVE if is_active else COLOR_INACTIVE
+        border_frame.config(bg=new_color)
+        for child in border_frame.winfo_children():
+            if isinstance(child, tk.Label):
+                child.config(bg=new_color)
+
+    def _bulk_toggle_addons(self, win, killer_index: int, activate: bool) -> None:
+        self.state.bulk_toggle_addons(killer_index, activate)
+        new_color = COLOR_ACTIVE if activate else COLOR_INACTIVE
+        for border_frame in win.border_frames.values():
+            border_frame.config(bg=new_color)
+            for child in border_frame.winfo_children():
+                if isinstance(child, tk.Label):
+                    child.config(bg=new_color)

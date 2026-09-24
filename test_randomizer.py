@@ -161,6 +161,124 @@ def test_corrupt_state_file_falls_back_to_defaults(state_file):
     assert state.active_killers == ["Killer A", "Killer B", "Killer C"]
 
 
+# -- Add-on management --------------------------------------------------
+
+
+def make_fake_data_many_addons():
+    """A killer with 4 add-ons (enough to test partial activation) and a
+    second killer with none, to check that edge case too."""
+    data = MagicMock()
+    data.killers = ["Killer A", "Killer B"]
+    data.killer_addons = {
+        0: [
+            {"name": "A1", "rarity": "Common", "img": "a1.png"},
+            {"name": "A2", "rarity": "Common", "img": "a2.png"},
+            {"name": "A3", "rarity": "Rare", "img": "a3.png"},
+            {"name": "A4", "rarity": "Rare", "img": "a4.png"},
+        ],
+        1: [],
+    }
+    data.perks_by_key = {
+        0: {"name": "Perk 1", "killer": "Killer A", "image": "p1.png"},
+    }
+    return data
+
+
+def test_addons_all_active_by_default(state_file):
+    state = RandomizerState(make_fake_data_many_addons(), state_file)
+    assert all(state.is_addon_active(0, i) for i in range(4))
+
+
+def test_toggle_addon_round_trips(state_file):
+    state = RandomizerState(make_fake_data_many_addons(), state_file)
+    assert state.is_addon_active(0, 0) is True
+    state.toggle_addon(0, 0)
+    assert state.is_addon_active(0, 0) is False
+    state.toggle_addon(0, 0)
+    assert state.is_addon_active(0, 0) is True
+
+
+def test_toggle_addon_is_per_killer(state_file):
+    state = RandomizerState(make_fake_data_many_addons(), state_file)
+    state.toggle_addon(0, 0)  # only affects Killer A's add-on 0
+    assert state.is_addon_active(0, 0) is False
+    # Killer B has no add-ons, but this confirms toggling one killer
+    # doesn't touch another killer's list.
+    assert state.active_addon_indices(1) == []
+
+
+def test_bulk_toggle_addons(state_file):
+    state = RandomizerState(make_fake_data_many_addons(), state_file)
+    state.bulk_toggle_addons(0, False)
+    assert state.active_addon_indices(0) == []
+    state.bulk_toggle_addons(0, True)
+    assert state.active_addon_indices(0) == [0, 1, 2, 3]
+
+
+def test_random_addons_respects_deactivated(state_file):
+    state = RandomizerState(make_fake_data_many_addons(), state_file)
+    state.toggle_addon(0, 2)  # deactivate A3
+    state.toggle_addon(0, 3)  # deactivate A4
+    for _ in range(50):
+        i1, i2 = state.random_addons(0)
+        assert {i1, i2} <= {0, 1}  # only A1/A2 remain active
+
+
+def test_random_addons_none_when_fewer_than_two_active(state_file):
+    state = RandomizerState(make_fake_data_many_addons(), state_file)
+    state.toggle_addon(0, 1)
+    state.toggle_addon(0, 2)
+    state.toggle_addon(0, 3)  # only A1 left active
+    assert state.random_addons(0) == (None, None)
+
+
+def test_random_addons_none_for_killer_with_no_addons(state_file):
+    state = RandomizerState(make_fake_data_many_addons(), state_file)
+    assert state.random_addons(1) == (None, None)
+
+
+def test_addon_state_persists_across_instances(state_file):
+    state = RandomizerState(make_fake_data_many_addons(), state_file)
+    state.toggle_addon(0, 0)
+
+    reloaded = RandomizerState(make_fake_data_many_addons(), state_file)
+    assert reloaded.is_addon_active(0, 0) is False
+    assert reloaded.is_addon_active(0, 1) is True
+
+
+def test_addon_state_file_contents(state_file):
+    state = RandomizerState(make_fake_data_many_addons(), state_file)
+    state.toggle_addon(0, 0)
+    with open(state_file, "r", encoding="utf-8") as f:
+        saved = json.load(f)
+    assert "A1" not in saved["active_addons"]["0"]
+    assert "A2" in saved["active_addons"]["0"]
+
+
+def test_addon_state_missing_killer_entry_defaults_to_active(state_file):
+    """If active_addons is saved without an entry for some killer (e.g. a
+    killer added to killers.json after the state file was last written),
+    that killer's add-ons should default to active rather than empty."""
+    with open(state_file, "w", encoding="utf-8") as f:
+        json.dump(
+            {
+                "active_killers": ["Killer A", "Killer B"],
+                "active_perks": ["Perk 1"],
+                "active_addons": {},  # no entry for killer 0 at all
+            },
+            f,
+        )
+    state = RandomizerState(make_fake_data_many_addons(), state_file)
+    assert state.active_addon_indices(0) == [0, 1, 2, 3]
+
+
+def test_corrupt_state_file_addons_default_to_active(state_file):
+    with open(state_file, "w", encoding="utf-8") as f:
+        f.write("{not valid json")
+    state = RandomizerState(make_fake_data_many_addons(), state_file)
+    assert state.active_addon_indices(0) == [0, 1, 2, 3]
+
+
 if __name__ == "__main__":
     import sys
     sys.exit(pytest.main([__file__, "-v"]))
