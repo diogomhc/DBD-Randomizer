@@ -89,14 +89,14 @@
       {"name": "Torn Bookmark", "rarity": "Visceral", "img": "./ItemAddons/iconAddon_tornBookmark.png"},
       {"name": "\"Bad Man's\" Last Breath", "rarity": "Very Rare", "img": "./ItemAddons/iconAddon_badMansLastBreath.png"},
       {"name": "Campbell's Last Breath", "rarity": "Very Rare", "img": "./ItemAddons/iconAddon_campbellsLastBreath.png"},
-      {"name": "Jenner's Last Breath", "rarity": "Very Rare","img": "./ItemAddons/iconAddon_jennersLastBreath.png"},
+      {"name": "Jenner's Last Breath", "rarity": "Very Rare", "img": "./ItemAddons/iconAddon_jennersLastBreath.png"},
       {"name": "Kavanagh's Last Breath", "rarity": "Very Rare", "img": "./ItemAddons/iconAddon_kavanaghsLastBreath.png"},
       {"name": "Anxious Gasp", "rarity": "Rare", "img": "./ItemAddons/iconAddon_anxiousGasp.png"},
       {"name": "Ataxic Respiration", "rarity": "Rare", "img": "./ItemAddons/iconAddon_ataxicRespiration.png"},
       {"name": "Fragile Wheeze", "rarity": "Rare", "img": "./ItemAddons/iconAddon_fragileWheeze.png"},
       {"name": "Heavy Panting", "rarity": "Rare", "img": "./ItemAddons/iconAddon_heavyPanting.png"},
       {"name": "Spasmodic Breath", "rarity": "Rare", "img": "./ItemAddons/iconAddon_spasmodicBreath.png"},
-      {"name": "Bad Man Keepsake", "rarity": "Uncommon", "img": "./ItemAddons/iconAddon_BadManKeepsake.png"},
+      {"name": "Bad Man Keepsake", "rarity": "Uncommon", "img": "./ItemAddons/iconAddon_badManKeepsake.png"},
       {"name": "Catatonic Boy's Treasure", "rarity": "Uncommon", "img": "./ItemAddons/iconAddon_catatonicTreasure.png"},
       {"name": "Dark Cincture", "rarity": "Uncommon", "img": "./ItemAddons/iconAddon_darkCincture.png"},
       {"name": "Dull Bracelet", "rarity": "Uncommon", "img": "./ItemAddons/iconAddon_dullBracelet.png"},
@@ -167,7 +167,7 @@
     "power": "./Powers/DLC4/iconPowers_cartersSpark.png",
     "addons": [
       {"name": "Iridescent King", "rarity": "Visceral", "img": "./ItemAddons/DLC4/iconAddon_iridescentKing.png"},
-      {"name": "Iridescent Queen", "rarity" : "Visceral", "img": "./ItemAddons/DLC4/iconAddon_iridescentQueen.png"},
+      {"name": "Iridescent Queen", "rarity": "Visceral", "img": "./ItemAddons/DLC4/iconAddon_iridescentQueen.png"},
       {"name": "\"Calm\" - Carter's Notes", "rarity": "Very Rare", "img": "./ItemAddons/DLC4/iconAddon_calmCartersNotes.png"},
       {"name": "\"Discipline\" - Carter's Notes", "rarity": "Very Rare", "img": "./ItemAddons/DLC4/iconAddon_diciplineCartersNotes.png"},
       {"name": "\"Order\" - Carter's Notes", "rarity": "Very Rare", "img": "./ItemAddons/DLC4/iconAddon_orderCartersNotes.png"},
@@ -303,7 +303,7 @@
     "addons": [
       {"name": "Redhead's Pinky Finger", "rarity": "Visceral", "img": "./ItemAddons/Guam/iconAddon_redheadsPinkyFinger.png"},
       {"name": "Tattoo's Middle Finger", "rarity": "Visceral", "img": "./ItemAddons/Guam/iconAddon_tattoosMiddleFinger.png"},
-      {"name" : "Cheap Gin Bottle", "rarity": "Very Rare", "img": "./ItemAddons/Guam/iconAddon_cheapGinBottle.png"},
+      {"name": "Cheap Gin Bottle", "rarity": "Very Rare", "img": "./ItemAddons/Guam/iconAddon_cheapGinBottle.png"},
       {"name": "Cigar Box", "rarity": "Very Rare", "img": "./ItemAddons/Guam/iconAddon_cigarBox.png"},
       {"name": "Ether 15 Vol%", "rarity": "Very Rare", "img": "./ItemAddons/Guam/iconAddon_ether15.png"},
       {"name": "Garish Makeup kit", "rarity": "Very Rare", "img": "./ItemAddons/Guam/iconAddon_garishMakeupKit.png"},
@@ -355,14 +355,14 @@
     "portrait": "./CharPortraits/Kenya/K14_TheLegion_Portrait.png",
     "power": "./Powers/Kenya/iconPowers_feralFrenzy.png",
     "addons": [
-      {"name": "Fuming Mix Tape", "rarity": "Visceral", "img": "./ItemAddons/Kenya/iconAddon_fumingMixTape.png"},
+      {"name": "Fuming Mix Tape", "rarity": "Visceral", "img": "./ItemAddons/Kenya/iconAddon_fumingMixtape.png"},
       {"name": "Iridescent Button", "rarity": "Visceral", "img": "./ItemAddons/Kenya/iconAddon_iridescentButton.png"},
       {"name": "BFFS", "rarity": "Very Rare", "img": "./ItemAddons/Kenya/iconAddon_coldDirt.png"},
       {"name": "Filthy Blade", "rarity": "Very Rare", "img": "./ItemAddons/Kenya/iconAddon_filthyBlade.png"},
       {"name": "Frank's Mix Tape", "rarity": "Very Rare", "img": "./ItemAddons/Kenya/iconAddon_franksMixtape.png"},
       {"name": "Stab Wounds Study", "rarity": "Very Rare", "img": "./ItemAddons/Kenya/iconAddon_stabWoundsStudy.png"},
       {"name": "Joey's Mix Tape", "rarity": "Rare", "img": "./ItemAddons/Kenya/iconAddon_joeysMixtape.png"},
-      {"name": "Stolen Sketch Book", "rarity": "Rare", "img": "./ItemAddons/Kenya/iconAddon_stolenSketchBook.png"},
+      {"name": "Stolen Sketch Book", "rarity": "Rare", "img": "./ItemAddons/Kenya/iconAddon_stolenSketchbook.png"},
       {"name": "Stylish Sunglasses", "rarity": "Rare", "img": "./ItemAddons/Kenya/iconAddon_nastyBlade.png"},
       {"name": "Susie's Mix Tape", "rarity": "Rare", "img": "./ItemAddons/Kenya/iconAddon_suziesMixtape.png"},
       {"name": "The Legion Pin", "rarity": "Rare", "img": "./ItemAddons/Kenya/iconAddon_theLegionButton.png"},
@@ -383,7 +383,7 @@
     "power": "./Powers/Mali/iconPowers_vilePurge.png",
     "addons": [
       {"name": "Black Incense", "rarity": "Visceral", "img": "./ItemAddons/Mali/iconAddon_blackIncense.png"},
-      {"name": "Iridescent Seal", "rarity": "Visceral", "img": "./ItemAddons/Mali/iconAddon_iridescentSeal.png"},
+      {"name": "Iridescent Seal", "rarity": "Visceral", "img": "./ItemAddons/Mali/iconAddon_IridescentSeal.png"},
       {"name": "Devotee's Amulet", "rarity": "Very Rare", "img": "./ItemAddons/Mali/iconAddon_devoteesAmulet.png"},
       {"name": "Severed Toe", "rarity": "Very Rare", "img": "./ItemAddons/Mali/iconAddon_severedToe.png"},
       {"name": "Vile Emetic", "rarity": "Very Rare", "img": "./ItemAddons/Mali/iconAddon_vileEmetic.png"},
@@ -393,7 +393,7 @@
       {"name": "Incensed Ointment", "rarity": "Rare", "img": "./ItemAddons/Mali/iconAddon_incensedOintment.png"},
       {"name": "Infected Emetic", "rarity": "Rare", "img": "./ItemAddons/Mali/iconAddon_infectedEmetic.png"},
       {"name": "Rubbing Oil", "rarity": "Rare", "img": "./ItemAddons/Mali/iconAddon_rubbingOil.png"},
-      {"name": "Blessed Apple", "rarity": "Uncommon","img": "./ItemAddons/Mali/iconAddon_prayerApple.png"},
+      {"name": "Blessed Apple", "rarity": "Uncommon", "img": "./ItemAddons/Mali/iconAddon_prayerApple.png"},
       {"name": "Emetic Potion", "rarity": "Uncommon", "img": "./ItemAddons/Mali/iconAddon_emeticPotion.png"},
       {"name": "Hematite Seal", "rarity": "Uncommon", "img": "./ItemAddons/Mali/iconAddon_hematiteSeal.png"},
       {"name": "Potent Tincture", "rarity": "Uncommon", "img": "./ItemAddons/Mali/iconAddon_potentTincture.png"},
@@ -413,7 +413,7 @@
       {"name": "\"Ghost Face Caught On Tape\"", "rarity": "Visceral", "img": "./ItemAddons/Oman/iconAddon_caughtOnTape.png"},
       {"name": "Driver's License", "rarity": "Very Rare", "img": "./ItemAddons/Oman/iconAddon_driversLicense.png"},
       {"name": "Drop-Leg Knife Sheath", "rarity": "Very Rare", "img": "./ItemAddons/Oman/iconAddon_dropLegKnifeSheath.png"},
-      {"name": "Night Vision Monocular", "rarity": "Very Rare", "img": "./ItemAddons/Oman/iconAddon_nightVisionMoncular.png"},
+      {"name": "Night Vision Monocular", "rarity": "Very Rare", "img": "./ItemAddons/Oman/iconAddon_nightvisionMoncular.png"},
       {"name": "Victim's Detailed Routine", "rarity": "Very Rare", "img": "./ItemAddons/Oman/iconAddon_victimsDetailedRoutine.png"},
       {"name": "Chewed Pen", "rarity": "Rare", "img": "./ItemAddons/Oman/iconAddon_chewedPen.png"},
       {"name": "Knife Belt Clip", "rarity": "Rare", "img": "./ItemAddons/Oman/iconAddon_knifeBeltClip.png"},
@@ -427,7 +427,8 @@
       {"name": "Cheap Cologne", "rarity": "Common", "img": "./ItemAddons/Oman/iconAddon_cheapCologne.png"},
       {"name": "Headline Cutouts", "rarity": "Common", "img": "./ItemAddons/Oman/iconAddon_headlinesCutouts.png"},
       {"name": "Walleye's Matchbook", "rarity": "Common", "img": "./ItemAddons/Oman/iconAddon_walleyesMatchbook.png"},
-      {"name": "\"Philly\"", "rarity": "Common", "img": "./ItemAddons/Oman/iconAddon_philly.png"}
+      {"name": "\"Philly\"", "rarity": "Common", "img": "./ItemAddons/Oman/iconAddon_philly.png"},
+      {"name": "Olsen's Journal", "rarity": "Common", "img": "./ItemAddons/Oman/iconAddon_olsensJournal.png"}
     ]
   },
   "16": {
@@ -462,7 +463,7 @@
     "portrait": "./CharPortraits/Sweden/K18_TheOni_Portrait.png",
     "power": "./Powers/Sweden/iconPowers_yamaokasWrath.png",
     "addons": [
-      {"name": "Iridescent Family Crest", "rarity": "Visceral", "img": "./ItemAddons/Sweden/iconAddon_iridescentFamilyCrest.png"},
+      {"name": "Iridescent Family Crest", "rarity": "Visceral", "img": "./ItemAddons/Sweden/iconAddon_IridescentFamilyCrest.png"},
       {"name": "Renjiro's Bloody Glove", "rarity": "Visceral", "img": "./ItemAddons/Sweden/iconAddon_renirosBloodyGlove.png"},
       {"name": "Akito's Crutch", "rarity": "Very Rare", "img": "./ItemAddons/Sweden/iconAddon_akitosCrutch.png"},
       {"name": "Lion Fang", "rarity": "Very Rare", "img": "./ItemAddons/Sweden/iconAddon_lionFang.png"},
@@ -597,8 +598,8 @@
     "portrait": "./CharPortraits/Comet/K23_TheTrickster_Portrait.png",
     "power": "./Powers/Comet/iconPowers_Showstopper_01.png",
     "addons": [
-      {"name": "Death Throes Compilation", "rarity": "Visceral", "img": "./ItemAddons/Comet/icons_Addon_deathThroesCompilation.png"},
-      {"name": "Iridescent Photocard", "rarity": "Visceral", "img": "./ItemAddons/Comet/icons_Addon_iridescentPhotocard.png"},
+      {"name": "Death Throes Compilation", "rarity": "Visceral", "img": "./ItemAddons/Comet/icons_Addon_DeathThroesCompilation.png"},
+      {"name": "Iridescent Photocard", "rarity": "Visceral", "img": "./ItemAddons/Comet/icons_Addon_IridescentPhotocard.png"},
       {"name": "Cut Thru U Single", "rarity": "Very Rare", "img": "./ItemAddons/Comet/icons_Addon_CutThruUsingle.png"},
       {"name": "Diamond Cufflinks", "rarity": "Very Rare", "img": "./ItemAddons/Comet/icons_Addon_DiamondCufflinks.png"},
       {"name": "Edge Of Revival Album", "rarity": "Very Rare", "img": "./ItemAddons/Comet/icons_Addon_EdgeOfRevivalAlbum.png"},
@@ -705,7 +706,7 @@
     "portrait": "./CharPortraits/Kepler/K27_TheOnryo_Portrait.png",
     "power": "./Powers/Kepler/iconPowers_delugeOfFear2.png",
     "addons": [
-      {"name": "Iridescent Videotape", "rarity": "Visceral", "img": "./ItemAddons/Kepler/iconAddon_IridescentVHSTape.png"},
+      {"name": "Iridescent Videotape", "rarity": "Visceral", "img": "./ItemAddons/Kepler/iconAddon_IridescentVHStape.png"},
       {"name": "Remote Control", "rarity": "Visceral", "img": "./ItemAddons/Kepler/iconAddon_RemoteControl.png"},
       {"name": "Distorted Photo", "rarity": "Very Rare", "img": "./ItemAddons/Kepler/iconAddon_DisortedPhoto.png"},
       {"name": "Tape Editing Deck", "rarity": "Very Rare", "img": "./ItemAddons/Kepler/iconAddon_TapeEditingDeck.png"},
@@ -724,7 +725,7 @@
       {"name": "Cabin Sign", "rarity": "Common", "img": "./ItemAddons/Kepler/iconAddon_CabinSign.png"},
       {"name": "Mother's Mirror", "rarity": "Common", "img": "./ItemAddons/Kepler/iconAddon_MothersMirror.png"},
       {"name": "Old Newspaper", "rarity": "Common", "img": "./ItemAddons/Kepler/iconAddon_OldNewspaper.png"},
-      {"name": "Videotape Copy", "rarity":"Common", "img": "./ItemAddons/Kepler/iconAddon_VhsCopy.png"}
+      {"name": "Videotape Copy", "rarity": "Common", "img": "./ItemAddons/Kepler/iconAddon_VhsCopy.png"}
     ]
   },
   "27": {
@@ -806,7 +807,6 @@
       {"name": "Map Of The Realm", "rarity": "Common", "img": "./ItemAddons/Quantum/iconAddon_MapoftheRealms.png"},
       {"name": "Pillaged Mead", "rarity": "Common", "img": "./ItemAddons/Quantum/iconAddon_PillagedMead.png"},
       {"name": "Tattered Tabard", "rarity": "Common", "img": "./ItemAddons/Quantum/iconAddon_TatteredTabard.png"}
-      
     ]
   },
   "30": {
@@ -896,7 +896,25 @@
     "power": "./Powers/Yerkes/iconPowers_K34.png",
     "addons": [
       {"name": "Hard Hat", "rarity": "Visceral", "img": "./ItemAddons/Yerkes/iconAddon_hardHat.png"},
-      {"name": "Iridescent Amulet", "rarity": "Visceral", "img": "./ItemAddons/Yerkes/iconAddon_iridescentAmulet.png"}
+      {"name": "Iridescent Amulet", "rarity": "Visceral", "img": "./ItemAddons/Yerkes/iconAddon_iridescentAmulet.png"},
+      {"name": "Pile of Nails", "rarity": "Very Rare", "img": "./ItemAddons/Yerkes/iconAddon_pileOfNails.png"},
+      {"name": "Plastic Bag", "rarity": "Very Rare", "img": "./ItemAddons/Yerkes/iconAddon_plasticBag.png"},
+      {"name": "Straight Razor", "rarity": "Very Rare", "img": "./ItemAddons/Yerkes/iconAddon_straightRazor.png"},
+      {"name": "Mirror Shards", "rarity": "Very Rare", "img": "./ItemAddons/Yerkes/iconAddon_mirrorShards.png"},
+      {"name": "Portable TV", "rarity": "Rare", "img": "./ItemAddons/Yerkes/iconAddon_portableTV.png"},
+      {"name": "Rat Poison", "rarity": "Rare", "img": "./ItemAddons/Yerkes/iconAddon_ratPoison.png"},
+      {"name": "Running Shoes", "rarity": "Rare", "img": "./ItemAddons/Yerkes/iconAddon_runningShoes.png"},
+      {"name": "Silk Pillow", "rarity": "Rare", "img": "./ItemAddons/Yerkes/iconAddon_silkPillow.png"},
+      {"name": "Yardstick", "rarity": "Rare", "img": "./ItemAddons/Yerkes/iconAddon_yardstick.png"},
+      {"name": "Automatic Screwdriver", "rarity": "Uncommon", "img": "./ItemAddons/Yerkes/iconAddon_automaticScrewdriver.png"},
+      {"name": "Electric Carving Knife", "rarity": "Uncommon", "img": "./ItemAddons/Yerkes/iconAddon_electricCarvingKnife.png"},
+      {"name": "Hair Spray & Candle", "rarity": "Uncommon", "img": "./ItemAddons/Yerkes/iconAddon_flamingHairSpray.png"},
+      {"name": "Jump Rope", "rarity": "Uncommon", "img": "./ItemAddons/Yerkes/iconAddon_jumpRope.png"},
+      {"name": "Power Drill", "rarity": "Uncommon", "img": "./ItemAddons/Yerkes/iconAddon_powerDrill.png"},
+      {"name": "Doll Eyes", "rarity": "Common", "img": "./ItemAddons/Yerkes/iconAddon_dollEyes.png"},
+      {"name": "Good Guy Box", "rarity": "Common", "img": "./ItemAddons/Yerkes/iconAddon_goodGuyBox.png"},
+      {"name": "Strobing Light", "rarity": "Common", "img": "./ItemAddons/Yerkes/iconAddon_strobingLight.png"},
+      {"name": "Tiny Scalpel", "rarity": "Common", "img": "./ItemAddons/Yerkes/iconAddon_tinyScalpel.png"}
     ]
   },
   "34": {
@@ -905,7 +923,25 @@
     "power": "./Powers/Applepie/iconPowers_ChargeUVX_K35.png",
     "addons": [
       {"name": "Captured By The Dark", "rarity": "Visceral", "img": "./ItemAddons/Applepie/iconAddon_capturedByTheDark.png"},
-      {"name": "Iridescent OSS Report", "rarity": "Visceral", "img": "./ItemAddons/Applepie/iconAddon_iridescentOSSReport.png"}
+      {"name": "Iridescent OSS Report", "rarity": "Visceral", "img": "./ItemAddons/Applepie/iconAddon_iridescentOSSReport.png"},
+      {"name": "Discarded Milk Carton", "rarity": "Very Rare", "img": "./ItemAddons/Applepie/iconAddon_discardedMilkCarton.png"},
+      {"name": "Homemade Mask", "rarity": "Very Rare", "img": "./ItemAddons/Applepie/iconAddon_homemadeMask.png"},
+      {"name": "Obscure Game Cartridge", "rarity": "Very Rare", "img": "./ItemAddons/Applepie/iconAddon_obscureGameCartridge.png"},
+      {"name": "Serum Vial", "rarity": "Very Rare", "img": "./ItemAddons/Applepie/iconAddon_serumVial.png"},
+      {"name": "B-Movie Poster", "rarity": "Rare", "img": "./ItemAddons/Applepie/iconAddon_b-moviePoster.png"},
+      {"name": "Footprint Cast", "rarity": "Rare", "img": "./ItemAddons/Applepie/iconAddon_footprintCast.png"},
+      {"name": "Front-Page Article", "rarity": "Rare", "img": "./ItemAddons/Applepie/iconAddon_frontPageArticle.png"},
+      {"name": "Hypnotist's Watch", "rarity": "Rare", "img": "./ItemAddons/Applepie/iconAddon_hypnotistsWatch.png"},
+      {"name": "Vanishing Box", "rarity": "Rare", "img": "./ItemAddons/Applepie/iconAddon_vanishingBox.png"},
+      {"name": "Device of Undisclosed Origin", "rarity": "Uncommon", "img": "./ItemAddons/Applepie/iconAddon_deviceOfUndisclosedOrigin.png"},
+      {"name": "Last Known Recording", "rarity": "Uncommon", "img": "./ItemAddons/Applepie/iconAddon_lastKnownRecording.png"},
+      {"name": "Notebook of Theories", "rarity": "Uncommon", "img": "./ItemAddons/Applepie/iconAddon_notebookOfTheories.png"},
+      {"name": "Slashed Backpack", "rarity": "Uncommon", "img": "./ItemAddons/Applepie/iconAddon_slashedBackpack.png"},
+      {"name": "Victim's Map", "rarity": "Uncommon", "img": "./ItemAddons/Applepie/iconAddon_victimsMap.png"},
+      {"name": "Blurry Photo", "rarity": "Common", "img": "./ItemAddons/Applepie/iconAddon_blurryPhoto.png"},
+      {"name": "Punctured Eyeball", "rarity": "Common", "img": "./ItemAddons/Applepie/iconAddon_puncturedEyeball.png"},
+      {"name": "Rabbit's Foot", "rarity": "Common", "img": "./ItemAddons/Applepie/iconAddon_rabbitsFoot.png"},
+      {"name": "Sketch Attempt", "rarity": "Common", "img": "./ItemAddons/Applepie/iconAddon_sketchAttempt.png"}
     ]
   },
   "35": {
@@ -914,7 +950,25 @@
     "power": "./Powers/Churros/iconPowers_VileDarkness.png",
     "addons": [
       {"name": "Iridescent Book Of Vile Darkness", "rarity": "Visceral", "img": "./ItemAddons/Churros/iconAddon_IridescentBookOfVileDarkness.png"},
-      {"name": "Vorpal Sword", "rarity": "Visceral", "img": "./ItemAddons/Churros/iconAddon_SwordOfKass.png"}
+      {"name": "Vorpal Sword", "rarity": "Visceral", "img": "./ItemAddons/Churros/iconAddon_SwordOfKass.png"},
+      {"name": "Bag of Holding", "rarity": "Very Rare", "img": "./ItemAddons/Churros/iconAddon_BagOfHolding.png"},
+      {"name": "Cloak of Invisibility", "rarity": "Very Rare", "img": "./ItemAddons/Churros/iconAddon_CloakOfInvisibility.png"},
+      {"name": "Dragontooth Dagger", "rarity": "Very Rare", "img": "./ItemAddons/Churros/iconAddon_DragontoothDagger.png"},
+      {"name": "Robe of Eyes", "rarity": "Very Rare", "img": "./ItemAddons/Churros/iconAddon_RobeOfEyes.png"},
+      {"name": "Boots of Speed", "rarity": "Rare", "img": "./ItemAddons/Churros/iconAddon_BootsOfSpeed.png"},
+      {"name": "Cloak of Elvenkind", "rarity": "Rare", "img": "./ItemAddons/Churros/iconAddon_CloakOfElvenkind.png"},
+      {"name": "Ornate Horn", "rarity": "Rare", "img": "./ItemAddons/Churros/iconAddon_OrnateHorn.png"},
+      {"name": "Pearl of Power", "rarity": "Rare", "img": "./ItemAddons/Churros/iconAddon_PearlOfPower.png"},
+      {"name": "Staff of Withering", "rarity": "Rare", "img": "./ItemAddons/Churros/iconAddon_StaffOfWithering.png"},
+      {"name": "Glass Eye", "rarity": "Uncommon", "img": "./ItemAddons/Churros/iconAddon_GlassEye.png"},
+      {"name": "Lantern of Revealing", "rarity": "Uncommon", "img": "./ItemAddons/Churros/iconAddon_LanternOfRevealing.png"},
+      {"name": "Potion of Speed", "rarity": "Uncommon", "img": "./ItemAddons/Churros/iconAddon_PotionOfSpeed.png"},
+      {"name": "Ring of Spell Storing", "rarity": "Uncommon", "img": "./ItemAddons/Churros/iconAddon_RingOfSpellStoring.png"},
+      {"name": "Ring of Telekinesis", "rarity": "Uncommon", "img": "./ItemAddons/Churros/iconAddon_RingOfTelekinesis.png"},
+      {"name": "Crystal Ball", "rarity": "Common", "img": "./ItemAddons/Churros/iconAddon_CrystalBall.png"},
+      {"name": "Raven's Feather", "rarity": "Common", "img": "./ItemAddons/Churros/iconAddon_RavensFeather.png"},
+      {"name": "Tattered Headband", "rarity": "Common", "img": "./ItemAddons/Churros/iconAddon_TatteredHeadband.png"},
+      {"name": "Trickster's Glove", "rarity": "Common", "img": "./ItemAddons/Churros/iconAddon_TrickstersGlove.png"}
     ]
   },
   "36": {
@@ -923,7 +977,25 @@
     "power": "./Powers/Eclair/iconPowers_K37_Shapeshift.png",
     "addons": [
       {"name": "Alucard's Shield", "rarity": "Visceral", "img": "./ItemAddons/Eclair/iconAddon_AlucardsShield.png"},
-      {"name": "Iridescent Ring Of Vlad", "rarity": "Visceral", "img": "./ItemAddons/Eclair/iconAddon_IridescentRingOfVlad.png"}
+      {"name": "Iridescent Ring Of Vlad", "rarity": "Visceral", "img": "./ItemAddons/Eclair/iconAddon_IridescentRingOfVlad.png"},
+      {"name": "Cube of Zoe", "rarity": "Very Rare", "img": "./ItemAddons/Eclair/iconAddon_CubeOfZoe.png"},
+      {"name": "Lapis Lazuli", "rarity": "Very Rare", "img": "./ItemAddons/Eclair/iconAddon_LapisLazuli.png"},
+      {"name": "Medusa's Hair", "rarity": "Very Rare", "img": "./ItemAddons/Eclair/iconAddon_MedusasHair.png"},
+      {"name": "Warg's Fang", "rarity": "Very Rare", "img": "./ItemAddons/Eclair/iconAddon_WargsFang.png"},
+      {"name": "Force of Echo", "rarity": "Rare", "img": "./ItemAddons/Eclair/iconAddon_ForceOfEcho.png"},
+      {"name": "Killer Doll", "rarity": "Rare", "img": "./ItemAddons/Eclair/iconAddon_KillerDoll.png"},
+      {"name": "Pocket Watch", "rarity": "Rare", "img": "./ItemAddons/Eclair/iconAddon_PocketWatch.png"},
+      {"name": "Sunglasses", "rarity": "Rare", "img": "./ItemAddons/Eclair/iconAddon_Sunglasses.png"},
+      {"name": "Sylph Feather", "rarity": "Rare", "img": "./ItemAddons/Eclair/iconAddon_SylphFeather.png"},
+      {"name": "Blood-Filled Goblet", "rarity": "Uncommon", "img": "./ItemAddons/Eclair/iconAddon_BloodFilledGoblet.png"},
+      {"name": "Magical Ticket", "rarity": "Uncommon", "img": "./ItemAddons/Eclair/iconAddon_MagicalTicket.png"},
+      {"name": "Moonstone Necklace", "rarity": "Uncommon", "img": "./ItemAddons/Eclair/iconAddon_MoonstoneNecklace.png"},
+      {"name": "White Wolf Medallion", "rarity": "Uncommon", "img": "./ItemAddons/Eclair/iconAddon_WhiteWolfMedallion.png"},
+      {"name": "Winged Boots", "rarity": "Uncommon", "img": "./ItemAddons/Eclair/iconAddon_WingedBoots.png"},
+      {"name": "Cerberus Talon", "rarity": "Common", "img": "./ItemAddons/Eclair/iconAddon_CerberusTalon.png"},
+      {"name": "Clock Tower Gear", "rarity": "Common", "img": "./ItemAddons/Eclair/iconAddon_ClockTowerGear.png"},
+      {"name": "Ruby Circlet", "rarity": "Common", "img": "./ItemAddons/Eclair/iconAddon_RubyCirclet.png"},
+      {"name": "Traveller's Hat", "rarity": "Common", "img": "./ItemAddons/Eclair/iconAddon_TravelersHat.png"}
     ]
   },
   "37": {
@@ -932,7 +1004,25 @@
     "power": "./Powers/Gelato/iconPowers_DashCommand_K38.png",
     "addons": [
       {"name": "Iridescent Wheel Handle", "rarity": "Visceral", "img": "./ItemAddons/Gelato/T_UI_iconAddon_IridescentWheelHandle.png"},
-      {"name": "Torn Novel", "rarity": "Visceral", "img": "./ItemAddons/Gelato/T_UI_iconAddon_TornNovel.png"}
+      {"name": "Torn Novel", "rarity": "Visceral", "img": "./ItemAddons/Gelato/T_UI_iconAddon_TornNovel.png"},
+      {"name": "Gunpowder Tin", "rarity": "Very Rare", "img": "./ItemAddons/Gelato/T_UI_iconAddon_GunpowderTin.png"},
+      {"name": "Leather Harness", "rarity": "Very Rare", "img": "./ItemAddons/Gelato/T_UI_iconAddon_LeatherHarness.png"},
+      {"name": "Marlinspike", "rarity": "Very Rare", "img": "./ItemAddons/Gelato/T_UI_iconAddon_Marlinspike.png"},
+      {"name": "Ship Figurehead", "rarity": "Very Rare", "img": "./ItemAddons/Gelato/T_UI_iconAddon_ShipFigurehead.png"},
+      {"name": "Fatty Meat", "rarity": "Rare", "img": "./ItemAddons/Gelato/T_UI_iconAddon_FattyMeat.png"},
+      {"name": "Spiked Collar", "rarity": "Rare", "img": "./ItemAddons/Gelato/T_UI_iconAddon_SpikedCollar.png"},
+      {"name": "Training Bell", "rarity": "Rare", "img": "./ItemAddons/Gelato/T_UI_iconAddon_TrainingBell.png"},
+      {"name": "Unfinished Map", "rarity": "Rare", "img": "./ItemAddons/Gelato/T_UI_iconAddon_UnfinishedMap.png"},
+      {"name": "Waterskin", "rarity": "Rare", "img": "./ItemAddons/Gelato/T_UI_iconAddon_Waterskin.png"},
+      {"name": "Barley Meal", "rarity": "Uncommon", "img": "./ItemAddons/Gelato/T_UI_iconAddon_BarleyMeal.png"},
+      {"name": "Belaying Pins", "rarity": "Uncommon", "img": "./ItemAddons/Gelato/T_UI_iconAddon_BelayingPins.png"},
+      {"name": "Knotted Rope", "rarity": "Uncommon", "img": "./ItemAddons/Gelato/T_UI_iconAddon_KnottedRope.png"},
+      {"name": "Smoked Snapper", "rarity": "Uncommon", "img": "./ItemAddons/Gelato/T_UI_iconAddon_SmokedSnapper.png"},
+      {"name": "Spyglass", "rarity": "Uncommon", "img": "./ItemAddons/Gelato/T_UI_iconAddon_Spyglass.png"},
+      {"name": "Creature's Bone", "rarity": "Common", "img": "./ItemAddons/Gelato/T_UI_iconAddon_CreaturesBone.png"},
+      {"name": "Sticky Pitch", "rarity": "Common", "img": "./ItemAddons/Gelato/T_UI_iconAddon_StickyPitch.png"},
+      {"name": "Trainer's Book", "rarity": "Common", "img": "./ItemAddons/Gelato/T_UI_iconAddon_TrainersBook.png"},
+      {"name": "Young Coconut", "rarity": "Common", "img": "./ItemAddons/Gelato/T_UI_iconAddon_YoungCoconut.png"}
     ]
   },
   "38": {
@@ -941,7 +1031,25 @@
     "power": "./Powers/Icecream/iconPowers_AimKaguneLeap_K39.png",
     "addons": [
       {"name": "Iridescent Eye Patch", "rarity": "Visceral", "img": "./ItemAddons/Icecream/T_UI_iconAddon_iridescentEyePatch.png"},
-      {"name": "Yamori's Mask", "rarity": "Visceral", "img": "./ItemAddons/Icecream/T_UI_iconAddon_YamorisMask.png"}
+      {"name": "Yamori's Mask", "rarity": "Visceral", "img": "./ItemAddons/Icecream/T_UI_iconAddon_YamorisMask.png"},
+      {"name": "CCG ID Card", "rarity": "Very Rare", "img": "./ItemAddons/Icecream/T_UI_iconAddon_CCGIDCard.png"},
+      {"name": "Fresh Coffee", "rarity": "Very Rare", "img": "./ItemAddons/Icecream/T_UI_iconAddon_freshCoffee.png"},
+      {"name": "Red-Headed Centipede", "rarity": "Very Rare", "img": "./ItemAddons/Icecream/T_UI_iconAddon_redHeadedCentipede.png"},
+      {"name": "Torture Apparatus", "rarity": "Very Rare", "img": "./ItemAddons/Icecream/T_UI_iconAddon_medicalApparatus.png"},
+      {"name": "Amon's Necktie", "rarity": "Rare", "img": "./ItemAddons/Icecream/T_UI_iconAddon_AmonsNecktie.png"},
+      {"name": "Aogiri Tree Robe", "rarity": "Rare", "img": "./ItemAddons/Icecream/T_UI_iconAddon_AogiriTreeRobe.png"},
+      {"name": "Mado's Glove", "rarity": "Rare", "img": "./ItemAddons/Icecream/T_UI_iconAddon_MadosGlove.png"},
+      {"name": "Red Spider Lily", "rarity": "Rare", "img": "./ItemAddons/Icecream/T_UI_iconAddon_redSpiderLily.png"},
+      {"name": "Rize's Glasses", "rarity": "Rare", "img": "./ItemAddons/Icecream/T_UI_iconAddon_RizesGlasses.png"},
+      {"name": "Blood-Stained Handkerchief", "rarity": "Uncommon", "img": "./ItemAddons/Icecream/T_UI_iconAddon_bloodStainedHandkerchief.png"},
+      {"name": "Broken Chain", "rarity": "Uncommon", "img": "./ItemAddons/Icecream/T_UI_iconAddon_brokenChain.png"},
+      {"name": "Hide's Headphones", "rarity": "Uncommon", "img": "./ItemAddons/Icecream/T_UI_iconAddon_HidesHeadphones.png"},
+      {"name": "Hinami's Umbrella", "rarity": "Uncommon", "img": "./ItemAddons/Icecream/T_UI_iconAddon_HinamisUmbrella.png"},
+      {"name": "Kaneki's Satchel", "rarity": "Uncommon", "img": "./ItemAddons/Icecream/T_UI_iconAddon_satchel.png"},
+      {"name": "Anteiku Apron", "rarity": "Common", "img": "./ItemAddons/Icecream/T_UI_iconAddon_AnteikuApron.png"},
+      {"name": "Kaneki's Wallet", "rarity": "Common", "img": "./ItemAddons/Icecream/T_UI_iconAddon_KanekisWallet.png"},
+      {"name": "Taiyaki", "rarity": "Common", "img": "./ItemAddons/Icecream/T_UI_iconAddon_taiyaki.png"},
+      {"name": "The Black Goat's Egg", "rarity": "Common", "img": "./ItemAddons/Icecream/T_UI_iconAddon_TheBlackGoatsEgg.png"}
     ]
   },
   "39": {
@@ -950,7 +1058,25 @@
     "power": "./Powers/Ketchup/iconPowers_ThrowAxe_K40.png",
     "addons": [
       {"name": "Faz-Coin", "rarity": "Visceral", "img": "./ItemAddons/Ketchup/T_UI_iconAddon_FazCoin.png"},
-      {"name": "Iridescent Remnant", "rarity": "Visceral", "img": "./ItemAddons/Ketchup/T_UI_iconAddon_IridescentRemnant.png"}
+      {"name": "Iridescent Remnant", "rarity": "Visceral", "img": "./ItemAddons/Ketchup/T_UI_iconAddon_IridescentRemnant.png"},
+      {"name": "Access Panel", "rarity": "Very Rare", "img": "./ItemAddons/Ketchup/T_UI_iconAddon_AccessPanel.png"},
+      {"name": "Celebrate! Poster", "rarity": "Very Rare", "img": "./ItemAddons/Ketchup/T_UI_iconAddon_CelebratePoster.png"},
+      {"name": "Endo CPU", "rarity": "Very Rare", "img": "./ItemAddons/Ketchup/T_UI_iconAddon_EndoCPU.png"},
+      {"name": "Loot Bag", "rarity": "Very Rare", "img": "./ItemAddons/Ketchup/T_UI_iconAddon_LootBag.png"},
+      {"name": "Bonnie's Guitar Strings", "rarity": "Rare", "img": "./ItemAddons/Ketchup/T_UI_iconAddon_BonniesGuitarStrings.png"},
+      {"name": "Chica's Bib", "rarity": "Rare", "img": "./ItemAddons/Ketchup/T_UI_iconAddon_ChicasBib.png"},
+      {"name": "Foxy's Hook", "rarity": "Rare", "img": "./ItemAddons/Ketchup/T_UI_iconAddon_FoxyHook.png"},
+      {"name": "Freddy's Hat", "rarity": "Rare", "img": "./ItemAddons/Ketchup/T_UI_iconAddon_FreddysHat.png"},
+      {"name": "Purple Guy Drawing", "rarity": "Rare", "img": "./ItemAddons/Ketchup/T_UI_iconAddon_PurpleGuyDrawing.png"},
+      {"name": "Office Phone", "rarity": "Uncommon", "img": "./ItemAddons/Ketchup/T_UI_iconAddon_OfficePhone.png"},
+      {"name": "Party Hat", "rarity": "Uncommon", "img": "./ItemAddons/Ketchup/T_UI_iconAddon_PartyHat.png"},
+      {"name": "Ripped Curtain", "rarity": "Uncommon", "img": "./ItemAddons/Ketchup/T_UI_iconAddon_RippedCurtain.png"},
+      {"name": "Security Guard's Badge", "rarity": "Uncommon", "img": "./ItemAddons/Ketchup/T_UI_iconAddon_SecurityGuardsBadge.png"},
+      {"name": "Streamers", "rarity": "Uncommon", "img": "./ItemAddons/Ketchup/T_UI_iconAddon_Streamers.png"},
+      {"name": "Greasy Paper Plate", "rarity": "Common", "img": "./ItemAddons/Ketchup/T_UI_iconAddon_GreasyPaperPlate.png"},
+      {"name": "Help Wanted Ad", "rarity": "Common", "img": "./ItemAddons/Ketchup/T_UI_iconAddon_HelpWantedAd.png"},
+      {"name": "Restaurant Menu", "rarity": "Common", "img": "./ItemAddons/Ketchup/T_UI_iconAddon_RestaurantMenu.png"},
+      {"name": "Rotten Pizza", "rarity": "Common", "img": "./ItemAddons/Ketchup/T_UI_iconAddon_RottenPizza.png"}
     ]
   },
   "40": {
@@ -959,7 +1085,25 @@
     "power": "./Powers/Maple/T_UI_iconPowers_HeadForm_K41.png",
     "addons": [
       {"name": "Chicken Head", "rarity": "Visceral", "img": "./ItemAddons/Maple/T_UI_iconAddon_ChickenHead.png"},
-      {"name": "Shredded Gown", "rarity": "Visceral", "img": "./ItemAddons/Maple/T_UI_iconAddon_ShreddedGown.png"}
+      {"name": "Shredded Gown", "rarity": "Visceral", "img": "./ItemAddons/Maple/T_UI_iconAddon_ShreddedGown.png"},
+      {"name": "Queen's Sceptre", "rarity": "Very Rare", "img": "./ItemAddons/Maple/T_UI_iconAddon_QueensScepter.png"},
+      {"name": "Rotten Swine", "rarity": "Very Rare", "img": "./ItemAddons/Maple/T_UI_iconAddon_RottenSwine.png"},
+      {"name": "Lorenza's Remains", "rarity": "Very Rare", "img": "./ItemAddons/Maple/T_UI_iconAddon_LorenzasRemains.png"},
+      {"name": "Mysterious Elixir", "rarity": "Very Rare", "img": "./ItemAddons/Maple/T_UI_iconAddon_IridescentElixir.png"},
+      {"name": "Spattered Handkerchief", "rarity": "Rare", "img": "./ItemAddons/Maple/T_UI_iconAddon_SpottedHandkerchief.png"},
+      {"name": "Theatre Binoculars", "rarity": "Rare", "img": "./ItemAddons/Maple/T_UI_iconAddon_TheaterBinoculars.png"},
+      {"name": "Dulled Knife", "rarity": "Rare", "img": "./ItemAddons/Maple/T_UI_iconAddon_DulledKnife.png"},
+      {"name": "Framed Newspaper", "rarity": "Rare", "img": "./ItemAddons/Maple/T_UI_iconAddon_FramedNewspaper.png"},
+      {"name": "Janjira's Hand", "rarity": "Rare", "img": "./ItemAddons/Maple/T_UI_iconAddon_JanjirasHand.png"},
+      {"name": "Wriggling Parasite", "rarity": "Uncommon", "img": "./ItemAddons/Maple/T_UI_iconAddon_WrigglingParasite.png"},
+      {"name": "Chunk of Malai", "rarity": "Uncommon", "img": "./ItemAddons/Maple/T_UI_iconAddon_ChunkOfMalai.png"},
+      {"name": "Crumpled Sheet Music", "rarity": "Uncommon", "img": "./ItemAddons/Maple/T_UI_iconAddon_CrumpledSheetMusic.png"},
+      {"name": "Defective Metronome", "rarity": "Uncommon", "img": "./ItemAddons/Maple/T_UI_iconAddon_DefectiveMetronome.png"},
+      {"name": "Pig's Eye", "rarity": "Uncommon", "img": "./ItemAddons/Maple/T_UI_iconAddon_PigsEye.png"},
+      {"name": "Broken Tiara", "rarity": "Common", "img": "./ItemAddons/Maple/T_UI_iconAddon_BrokenTiara.png"},
+      {"name": "First Libretto", "rarity": "Common", "img": "./ItemAddons/Maple/T_UI_iconAddon_FirstLibretto.png"},
+      {"name": "Luckless Mouse", "rarity": "Common", "img": "./ItemAddons/Maple/T_UI_iconAddon_LucklessMouse.png"},
+      {"name": "Sticky Lozenge", "rarity": "Common", "img": "./ItemAddons/Maple/T_UI_iconAddon_StickyLozenge.png"}
     ]
   },
   "41": {
@@ -968,7 +1112,25 @@
     "power": "./Powers/Poutine/T_UI_iconPowers_EnterUpsideDown.png",
     "addons": [
       {"name": "Chess Piece", "rarity": "Visceral", "img": "./ItemAddons/Poutine/T_UI_iconAddon_ChessPiece.png"},
-      {"name": "Iridescent Soteria Chip", "rarity": "Visceral", "img": "./ItemAddons/Poutine/T_UI_iconAddon_IridescentSoteriaChip.png"}
+      {"name": "Iridescent Soteria Chip", "rarity": "Visceral", "img": "./ItemAddons/Poutine/T_UI_iconAddon_IridescentSoteriaChip.png"},
+      {"name": "Black Widow Spider", "rarity": "Very Rare", "img": "./ItemAddons/Poutine/T_UI_iconAddon_BlackWidowSpider.png"},
+      {"name": "Broken Skateboard", "rarity": "Very Rare", "img": "./ItemAddons/Poutine/T_UI_iconAddon_BrokenSkateboard.png"},
+      {"name": "Electroshock Collar", "rarity": "Very Rare", "img": "./ItemAddons/Poutine/T_UI_iconAddon_ElectroshockCollar.png"},
+      {"name": "Rabbit Remains", "rarity": "Very Rare", "img": "./ItemAddons/Poutine/T_UI_iconAddon_RabbitRemains.png"},
+      {"name": "Victor's Razor Blade", "rarity": "Rare", "img": "./ItemAddons/Poutine/T_UI_iconAddon_VictorsRazorBlade.png"},
+      {"name": "Forged Death Certificate", "rarity": "Rare", "img": "./ItemAddons/Poutine/T_UI_iconAddon_ForgedDeathCertificate.png"},
+      {"name": "Neck Tendril", "rarity": "Rare", "img": "./ItemAddons/Poutine/T_UI_iconAddon_NeckTendril.png"},
+      {"name": "Pizza Goggles", "rarity": "Rare", "img": "./ItemAddons/Poutine/T_UI_iconAddon_PizzaGoggles.png"},
+      {"name": "Electrode Cap", "rarity": "Rare", "img": "./ItemAddons/Poutine/T_UI_iconAddon_ElectrodeCap.png"},
+      {"name": "Shattered Wrist Rocket", "rarity": "Uncommon", "img": "./ItemAddons/Poutine/T_UI_iconAddon_ShatteredWristRocket.png"},
+      {"name": "Smashed Cassette Deck", "rarity": "Uncommon", "img": "./ItemAddons/Poutine/T_UI_iconAddon_SmashedCassetteDeck.png"},
+      {"name": "Bloody Roller Skate", "rarity": "Uncommon", "img": "./ItemAddons/Poutine/T_UI_iconAddon_BloodyRollerSkate.png"},
+      {"name": "Clock Hands", "rarity": "Uncommon", "img": "./ItemAddons/Poutine/T_UI_iconAddon_ClockHands.png"},
+      {"name": "Gutted Supercom", "rarity": "Uncommon", "img": "./ItemAddons/Poutine/T_UI_iconAddon_GuttedSupercom.png"},
+      {"name": "Mid-Century Radio", "rarity": "Common", "img": "./ItemAddons/Poutine/T_UI_iconAddon_Mid-CenturyRadio.png"},
+      {"name": "Bead Maze", "rarity": "Common", "img": "./ItemAddons/Poutine/T_UI_iconAddon_BeadMaze.png"},
+      {"name": "Orderly ID", "rarity": "Common", "img": "./ItemAddons/Poutine/T_UI_iconAddon_OrderlyID.png"},
+      {"name": "Stained Glass Mural", "rarity": "Common", "img": "./ItemAddons/Poutine/T_UI_iconAddon_StainedGlassMural.png"}
     ]
   },
   "42": {
@@ -977,7 +1139,25 @@
     "power": "./Powers/Sushi/T_UI_iconPowers_DramaticEntrance.png",
     "addons": [
       {"name": "Dirty Money", "rarity": "Visceral", "img": "./ItemAddons/Sushi/T_UI_iconAddon_DirtyMoney.png"},
-      {"name": "Iridescent Boat Motor", "rarity": "Visceral", "img": "./ItemAddons/Sushi/T_UI_iconAddon_IridescentBoatMotor.png"}
+      {"name": "Iridescent Boat Motor", "rarity": "Visceral", "img": "./ItemAddons/Sushi/T_UI_iconAddon_IridescentBoatMotor.png"},
+      {"name": "Bloody Magazine", "rarity": "Very Rare", "img": "./ItemAddons/Sushi/T_UI_iconAddon_BloodyMagazine.png"},
+      {"name": "Burnt Fuse", "rarity": "Very Rare", "img": "./ItemAddons/Sushi/T_UI_iconAddon_BurntFuse.png"},
+      {"name": "Deputy's Badge", "rarity": "Very Rare", "img": "./ItemAddons/Sushi/T_UI_iconAddon_DeputysBadge.png"},
+      {"name": "Missing Corkscrew", "rarity": "Very Rare", "img": "./ItemAddons/Sushi/T_UI_iconAddon_MissingCorkscrew.png"},
+      {"name": "Sauna Rock", "rarity": "Rare", "img": "./ItemAddons/Sushi/T_UI_iconAddon_SaunaRock.png"},
+      {"name": "Eye Goop", "rarity": "Rare", "img": "./ItemAddons/Sushi/T_UI_iconAddon_EyeGoop.png"},
+      {"name": "Imprinted Aluminum", "rarity": "Rare", "img": "./ItemAddons/Sushi/T_UI_iconAddon_ImprintedAluminum.png"},
+      {"name": "Mirror Shards", "rarity": "Rare", "img": "./ItemAddons/Sushi/T_UI_iconAddon_MirrorShards.png"},
+      {"name": "Two Nails", "rarity": "Rare", "img": "./ItemAddons/Sushi/T_UI_iconAddon_TwoNails.png"},
+      {"name": "Bloody Smile", "rarity": "Uncommon", "img": "./ItemAddons/Sushi/T_UI_iconAddon_BloodySmile.png"},
+      {"name": "Coroner's Coffee", "rarity": "Uncommon", "img": "./ItemAddons/Sushi/T_UI_iconAddon_CoronersCoffee.png"},
+      {"name": "Party Noisemaker", "rarity": "Uncommon", "img": "./ItemAddons/Sushi/T_UI_iconAddon_PartyNoisemaker.png"},
+      {"name": "Sleeping Bag", "rarity": "Uncommon", "img": "./ItemAddons/Sushi/T_UI_iconAddon_SleepingBag.png"},
+      {"name": "Toxic Waste", "rarity": "Uncommon", "img": "./ItemAddons/Sushi/T_UI_iconAddon_ToxicWaste.png"},
+      {"name": "Bent Wheel", "rarity": "Common", "img": "./ItemAddons/Sushi/T_UI_iconAddon_BentWheel.png"},
+      {"name": "Garden Claw", "rarity": "Common", "img": "./ItemAddons/Sushi/T_UI_iconAddon_GardenClaw.png"},
+      {"name": "Knitting Needle", "rarity": "Common", "img": "./ItemAddons/Sushi/T_UI_iconAddon_KnittingNeedle.png"},
+      {"name": "Orderly's Shoe", "rarity": "Common", "img": "./ItemAddons/Sushi/T_UI_iconAddon_OrderlysShoe.png"}
     ]
   },
   "43": {
@@ -985,8 +1165,26 @@
     "portrait": "./CharPortraits/Udon/T_UI_K44_TheJudgment_Portrait.png",
     "power": "./Powers/Udon/T_UI_iconPowers_ChargeRay.png",
     "addons": [
-      {"name": "Crown Of The Destroyer", "rarity": "Visceral", "img": "./ItemAddons/Udon/T_UI_iconAddon_CrownOfTheDestroyer.png"},
-      {"name": "Mirror Of The Creators", "rarity": "Visceral", "img": "./ItemAddons/Udon/T_UI_iconAddon_MirrorOfTheCreators.png"}
+      {"name": "Obsidian Feather", "rarity": "Visceral", "img": "./ItemAddons/Udon/T_UI_iconAddon_ObsidianFeather.png"},
+      {"name": "Mirror Of The Creators", "rarity": "Visceral", "img": "./ItemAddons/Udon/T_UI_iconAddon_MirrorOfTheCreators.png"},
+      {"name": "Chains of the Heretic", "rarity": "Very Rare", "img": "./ItemAddons/Udon/T_UI_iconAddon_ChainsOfTheHeretic.png"},
+      {"name": "Crown of the Destroyer", "rarity": "Very Rare", "img": "./ItemAddons/Udon/T_UI_iconAddon_CrownOfTheDestroyer.png"},
+      {"name": "Eyes of Gerhardt", "rarity": "Very Rare", "img": "./ItemAddons/Udon/T_UI_iconAddon_EyesOfGerhardt.png"},
+      {"name": "Improvised Detonators", "rarity": "Very Rare", "img": "./ItemAddons/Udon/T_UI_iconAddon_ImprovisedDetonators.png"},
+      {"name": "Blindfold of the Devoted", "rarity": "Rare", "img": "./ItemAddons/Udon/T_UI_iconAddon_BlindfoldOfTheDevoted.png"},
+      {"name": "Electric Torch", "rarity": "Rare", "img": "./ItemAddons/Udon/T_UI_iconAddon_ElectricTorch.png"},
+      {"name": "Holy Winged Icon", "rarity": "Rare", "img": "./ItemAddons/Udon/T_UI_iconAddon_HolyWingedIcon.png"},
+      {"name": "Order of Inquisition", "rarity": "Rare", "img": "./ItemAddons/Udon/T_UI_iconAddon_OrderOfInquisition.png"},
+      {"name": "Superheated Glass", "rarity": "Rare", "img": "./ItemAddons/Udon/T_UI_iconAddon_SuperheatedGlass.png"},
+      {"name": "Aurora's Telereceptor", "rarity": "Uncommon", "img": "./ItemAddons/Udon/T_UI_iconAddon_AurorasTelereceptor.png"},
+      {"name": "Confessor's War Horn", "rarity": "Uncommon", "img": "./ItemAddons/Udon/T_UI_iconAddon_ConfessorsWarHorn.png"},
+      {"name": "Magnetized Manacles", "rarity": "Uncommon", "img": "./ItemAddons/Udon/T_UI_iconAddon_MagnetizedManacles.png"},
+      {"name": "Mark of the Adherent", "rarity": "Uncommon", "img": "./ItemAddons/Udon/T_UI_iconAddon_MarkOfTheAdherent.png"},
+      {"name": "Undying Flame", "rarity": "Uncommon", "img": "./ItemAddons/Udon/T_UI_iconAddon_UndyingFlame.png"},
+      {"name": "Heretic's Mark", "rarity": "Common", "img": "./ItemAddons/Udon/T_UI_iconAddon_HereticsMark.png"},
+      {"name": "Koenrad's Gauntlet", "rarity": "Common", "img": "./ItemAddons/Udon/T_UI_iconAddon_KoenradsGauntlet.png"},
+      {"name": "Prayer Kneeler", "rarity": "Common", "img": "./ItemAddons/Udon/T_UI_iconAddon_PrayerKneeler.png"},
+      {"name": "Searcher's Skull", "rarity": "Common", "img": "./ItemAddons/Udon/T_UI_iconAddon_SearchersSkull.png"}
     ]
   }
 }
